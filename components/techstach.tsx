@@ -131,7 +131,7 @@ const Techstack = ({}) => {
             <li className="ml-5 mt-2 sm:mt-0 sm:ml-0 font-bold hidden lg:flex">
               Design tools
             </li>
-            <ul className="pl-3 w-full h-full justify-start flex flex-row  flex-wrap mb-5 hidden lg:flex">
+            <ul className="pl-3 w-full h-full justify-start flex flex-row  flex-wrap mb-5 lg:flex">
               <a
                 className="h-fit"
                 rel="noreferrer"
