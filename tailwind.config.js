@@ -1,5 +1,8 @@
 /** @type {import('tailwindcss').Config} */
+const sharedConfig = require("@hairy-studios/tailwind-config/tailwind.config.js");
+
 module.exports = {
+  presets: [sharedConfig],
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
