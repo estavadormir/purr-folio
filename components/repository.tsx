@@ -1,37 +1,37 @@
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
 
-const Repository = ({}) => {
+const Repository = () => {
   return (
     <section
       id="repository"
-      className="sm:flex-row flex-col w-full flex justify-center sm:bg-slate-900 bg-black z-12 min-h-screen h-screen relative z-11 xl:min-h-screen"
+      className="z-12 z-11 relative flex h-screen min-h-screen w-full flex-col justify-center bg-black sm:flex-row sm:bg-slate-900 xl:min-h-screen"
     >
-      <div className="flex-row flex justify-center sm:w-1/2 bg-tiktokPink"></div>
-      <div className="flex flex-col justify-center mt-5 mb-2 font-mono text-4xl text-gray-100 sm:w-1/2">
-        <div className="flex flex-col mt-auto">
-          <h2 className="flex flex-start ml-5 font-display font-bold md:text-xl uppercase mb-4 text-tiktokPink">
+      <div className="bg-tiktokPink flex flex-row justify-center sm:w-1/2"></div>
+      <div className="mb-2 mt-5 flex flex-col justify-center font-mono text-4xl text-gray-100 sm:w-1/2">
+        <div className="mt-auto flex flex-col">
+          <h2 className="flex-start font-display text-tiktokPink mb-4 ml-5 flex font-bold uppercase md:text-xl">
             Source code
           </h2>
-          <h1 className="flex justify-start ml-5 mt-5 mb-2 font-mono text-4xl text-gray-100 lg:text-6xl">
+          <h1 className="mb-2 ml-5 mt-5 flex justify-start font-mono text-4xl text-gray-100 lg:text-6xl">
             Behind the scenes
           </h1>
-          <p className="text-neutral-400 leading-relaxed max-w-prose text-xl mt-2 mx-5 mb-5 flex justify-start text-justify font-mono">
+          <p className="mx-5 mb-5 mt-2 flex max-w-prose justify-start text-justify font-mono text-xl leading-relaxed text-neutral-400">
             Wondering how I work? Need a specific component for your project? Or
             just curious on how I code?
           </p>
-          <div className="flex justify-start ml-5 ">
+          <div className="ml-5 flex justify-start ">
             <Link
               href={`https://github.com/estavadormir`}
               rel="noopener noreferrer"
-              className="flex flex-row text-tiktokPink hover:cursor-pointer hover:bg-tiktokAqua hover:text-black hover:border-tiktokAqua border-tiktokPink border-2 px-5"
+              className="text-tiktokPink hover:bg-tiktokAqua hover:border-tiktokAqua border-tiktokPink flex flex-row border-2 px-5 hover:cursor-pointer hover:text-black"
             >
               <FaGithub size={32} />
             </Link>
           </div>
         </div>
-        <div className="flex mt-64 lg:mt-auto">
-          <p className="text-xs flex justify-center w-full">
+        <div className="mt-64 flex lg:mt-auto">
+          <p className="flex w-full justify-center text-xs">
             {`Copyright © ` +
               new Date().getFullYear().toString() +
               ` andrelikescomputers.dev All Rights Reserved.`}
