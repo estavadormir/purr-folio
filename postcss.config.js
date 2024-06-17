@@ -1,16 +1,18 @@
 const cssnano = [
-  "cssnano",
+  'cssnano',
   {
-    preset: "advanced",
+    preset: 'advanced',
     discardComments: { removeAll: true },
   },
 ];
 
 module.exports = {
   plugins: [
-    "postcss-import",
-    "tailwindcss",
-    "autoprefixer",
-    ...(process.env.NODE_ENV === "production" ? [cssnano] : []),
+    'postcss-import',
+    'tailwindcss',
+    'autoprefixer',
+    ...(process.env.NODE_ENV === 'production'
+      ? [cssnano]
+      : []),
   ],
 };
