@@ -17,8 +17,7 @@ const Contacts = () => {
             <li
               className="hover:text-tiktokPink mr-2 mt-2 flex animate-pulse cursor-pointer justify-start rounded-lg px-2 text-center sm:text-xl"
               onClick={() =>
-                (window.location.href =
-                  'mailto:andrelikescomputers@gmail.com')
+                (window.location.href = "mailto:andrelikescomputers@gmail.com")
               }
             >
               ✉️ E-mail
@@ -27,7 +26,7 @@ const Contacts = () => {
               className="hover:text-tiktokPink mr-2 mt-2 flex cursor-pointer justify-start rounded-lg px-2 text-center sm:text-xl"
               onClick={() =>
                 (window.location.href =
-                  'https://www.linkedin.com/in/andrelikescomputers/')
+                  "https://www.linkedin.com/in/andrelikescomputers/")
               }
             >
               🧑‍💼 Linkedin
@@ -35,8 +34,7 @@ const Contacts = () => {
             <li
               className="hover:text-tiktokPink mt-2 flex cursor-pointer justify-start rounded-lg px-2 text-center sm:text-xl"
               onClick={() =>
-                (window.location.href =
-                  'https://github.com/estavadormir/')
+                (window.location.href = "https://github.com/estavadormir/")
               }
             >
               💻 Github

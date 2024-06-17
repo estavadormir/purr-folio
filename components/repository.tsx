@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import { FaGithub } from 'react-icons/fa';
+import Link from "next/link";
+import { FaGithub } from "react-icons/fa";
 
 const Repository = () => {
   return (
@@ -17,8 +17,8 @@ const Repository = () => {
             Behind the scenes
           </h1>
           <p className="mx-5 mb-5 mt-2 flex max-w-prose justify-start text-justify font-mono text-xl leading-relaxed text-neutral-400">
-            Wondering how I work? Need a specific component
-            for your project? Or just curious on how I code?
+            Wondering how I work? Need a specific component for your project? Or
+            just curious on how I code?
           </p>
           <div className="ml-5 flex justify-start ">
             <Link

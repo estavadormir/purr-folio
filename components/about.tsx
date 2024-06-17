@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/image";
 
 const About = () => {
   return (
@@ -79,8 +79,7 @@ const About = () => {
                     href="https://en.wikipedia.org/wiki/Financial_institution"
                   >
                     <li className="hover:text-tiktokPink cursor-pointer">
-                      🏦 2 years experience in financial
-                      institutions
+                      🏦 2 years experience in financial institutions
                     </li>
                   </a>
                   <a
@@ -98,7 +97,7 @@ const About = () => {
                     href="https://worldofwarcraft.com/"
                   >
                     <li className="hover:text-tiktokPink cursor-pointer">
-                      🎮 WoW Player{' '}
+                      🎮 WoW Player{" "}
                     </li>
                   </a>
                   <a
@@ -116,7 +115,7 @@ const About = () => {
                     href="https://en.wikipedia.org/wiki/Running"
                   >
                     <li className="hover:text-tiktokPink cursor-pointer">
-                      🏃 Runner{' '}
+                      🏃 Runner{" "}
                     </li>
                   </a>
                   <a

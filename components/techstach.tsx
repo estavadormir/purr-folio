@@ -1,4 +1,4 @@
-import Typewriter from 'typewriter-effect';
+import Typewriter from "typewriter-effect";
 const Techstack = () => {
   return (
     <section
@@ -8,10 +8,7 @@ const Techstack = () => {
       <h1 className="mb-2 mt-5 flex px-10 font-mono text-xl text-black sm:pb-10 sm:text-4xl lg:text-6xl">
         <Typewriter
           options={{
-            strings: [
-              'Some of the Technologies that I use:',
-              ':)',
-            ],
+            strings: ["Some of the Technologies that I use:", ":)"],
             autoStart: true,
             loop: true,
           }}
@@ -21,66 +18,42 @@ const Techstack = () => {
       <div className="flex flex-col">
         <ul className="w-full flex-col border-black px-5 pb-1 text-left font-medium text-white">
           <div className="rounded border-2 border-black bg-white py-3 text-black hover:shadow-xl sm:px-10">
-            <li className="ml-5 font-bold sm:ml-0">
-              Languages:
-            </li>
+            <li className="ml-5 font-bold sm:ml-0">Languages:</li>
             <ul className="mb-5 flex h-full w-full flex-row flex-wrap justify-start pl-3">
               <a
                 className="h-fit"
                 rel="noreferrer"
                 href="https://www.typescriptlang.org/"
               >
-                {' '}
+                {" "}
                 <li className="hover:bg-tiktokAqua mx-2 mt-2 flex h-full cursor-pointer rounded-lg border-2 border-black px-2 py-2 text-center">
                   TypeScript ❤️
                 </li>
               </a>
-              <a
-                className="h-fit"
-                rel="noreferrer"
-                href="https://www.php.net/"
-              >
+              <a className="h-fit" rel="noreferrer" href="https://www.php.net/">
                 <li className="hover:bg-tiktokAqua mx-2 mt-2 flex h-full cursor-pointer rounded-lg border-2 border-black px-2 py-2 text-center">
                   PHP
                 </li>
               </a>
-              <a
-                className="h-fit"
-                rel="noreferrer"
-                href="https://dart.dev/"
-              >
+              <a className="h-fit" rel="noreferrer" href="https://dart.dev/">
                 <li className="hover:bg-tiktokAqua mx-2 mt-2 flex h-full cursor-pointer rounded-lg border-2 border-black px-2 py-2 text-center">
                   Dart 💀
                 </li>
               </a>
             </ul>
-            <li className="ml-5 mt-2 font-bold sm:ml-0 sm:mt-0">
-              Frameworks:
-            </li>
+            <li className="ml-5 mt-2 font-bold sm:ml-0 sm:mt-0">Frameworks:</li>
             <ul className="mb-5 flex h-full w-full flex-row flex-wrap justify-start pl-3">
-              <a
-                className="h-fit"
-                rel="noreferrer"
-                href="https://nextjs.org/"
-              >
+              <a className="h-fit" rel="noreferrer" href="https://nextjs.org/">
                 <li className="hover:bg-tiktokAqua mx-2 mt-2 flex h-full cursor-pointer rounded-lg border-2 border-black px-2 py-2 text-center">
                   NextJS ❤️
                 </li>
               </a>
-              <a
-                className="h-fit"
-                rel="noreferrer"
-                href="https://reactjs.org/"
-              >
+              <a className="h-fit" rel="noreferrer" href="https://reactjs.org/">
                 <li className="hover:bg-tiktokAqua mx-2 mt-2 flex h-full cursor-pointer rounded-lg border-2 border-black px-2 py-2 text-center">
                   React
                 </li>
               </a>
-              <a
-                className="h-fit"
-                rel="noreferrer"
-                href="https://laravel.com/"
-              >
+              <a className="h-fit" rel="noreferrer" href="https://laravel.com/">
                 <li className="hover:bg-tiktokAqua mx-2 mt-2 flex h-full cursor-pointer rounded-lg border-2 border-black px-2 py-2 text-center">
                   Laravel
                 </li>
@@ -112,11 +85,7 @@ const Techstack = () => {
                   Bootstrap 3,4,5
                 </li>
               </a>
-              <a
-                className="h-fit"
-                rel="noreferrer"
-                href="https://jestjs.io/"
-              >
+              <a className="h-fit" rel="noreferrer" href="https://jestjs.io/">
                 <li className="hover:bg-tiktokAqua mx-2 mt-2 flex h-full cursor-pointer rounded-lg border-2 border-black px-2 py-2 text-center">
                   Jest
                 </li>
@@ -135,11 +104,7 @@ const Techstack = () => {
                   NPM
                 </li>
               </a>
-              <a
-                className="h-fit"
-                rel="noreferrer"
-                href="https://git-scm.com/"
-              >
+              <a className="h-fit" rel="noreferrer" href="https://git-scm.com/">
                 <li className="hover:bg-tiktokAqua mx-2 mt-2 flex h-full cursor-pointer rounded-lg border-2 border-black px-2 py-2 text-center">
                   git
                 </li>

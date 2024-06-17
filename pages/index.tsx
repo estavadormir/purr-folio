@@ -1,10 +1,10 @@
-import type { NextPage } from 'next';
-import Head from 'next/head';
-import About from '../components/about';
-import Contacts from '../components/contacts';
-import Home from '../components/home';
-import Repository from '../components/repository';
-import Techstack from '../components/techstach';
+import type { NextPage } from "next";
+import Head from "next/head";
+import About from "../components/about";
+import Contacts from "../components/contacts";
+import Home from "../components/home";
+import Repository from "../components/repository";
+import Techstack from "../components/techstach";
 const App: NextPage = () => {
   return (
     <div className="min-h-screen flex min-w-screen flex-col items-center justify-center bg-tiktokPink w-full">
