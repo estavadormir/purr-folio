@@ -12,15 +12,6 @@ const spaceMono = Space_Mono({
 export const metadata = {
   title: "André - developer",
   description: "Developer with 7 years of experience based in Luxembourg",
-  icons: {
-    icon: "/icon.png",
-    shortcut: "/shortcut-icon.png",
-    apple: "/apple-icon.png",
-    other: {
-      rel: "apple-touch-icon",
-      url: "/apple-touch-icon.png",
-    },
-  },
   openGraph: {
     ...openGraphImage,
     title: "André - developer",

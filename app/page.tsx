@@ -3,7 +3,7 @@ import type { NextPage } from "next";
 
 const App: NextPage = () => {
   return (
-    <main className=" flex bg-tiktokPink w-full flex-col items-center justify-center text-center ">
+    <main className=" flex bg-tiktokPink w-full flex-col items-center justify-center text-center">
       <Home />
       <About />
       <Techstack />

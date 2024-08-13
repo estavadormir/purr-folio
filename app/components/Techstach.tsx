@@ -109,7 +109,7 @@ export const Techstack = () => {
                 href="https://storybook.js.org/"
               >
                 <li className="hover:bg-tiktokAqua mx-2 mt-2 flex h-full cursor-pointer rounded-lg border-2 border-black px-2 py-2 text-center">
-                  Storybook (Accessibility tests and UI showcase)
+                  Storybook
                 </li>
               </Link>
               <Link
@@ -271,10 +271,10 @@ export const Techstack = () => {
                 </li>
               </Link>
             </ul>
-            <li className="ml-5 mt-2 hidden font-bold sm:ml-0 sm:mt-0 lg:flex">
+            <li className="ml-5 mt-2 font-bold sm:ml-0 sm:mt-0 flex">
               Databases
             </li>
-            <ul className="mb-5 hidden h-full w-full flex-row  flex-wrap justify-start pl-3 lg:flex">
+            <ul className="mb-5 h-full w-full flex-row  flex-wrap justify-start pl-3 flex">
               <Link
                 className="h-fit"
                 rel="noreferrer"
@@ -308,10 +308,10 @@ export const Techstack = () => {
                 </li>
               </Link>
             </ul>
-            <li className="ml-5 mt-2 hidden font-bold sm:ml-0 sm:mt-0 lg:flex">
+            <li className="ml-5 mt-2 font-bold sm:ml-0 sm:mt-0 flex">
               Code quality
             </li>
-            <ul className="mb-5 hidden h-full w-full flex-row  flex-wrap justify-start pl-3 lg:flex">
+            <ul className="mb-5  h-full w-full flex-row  flex-wrap justify-start pl-3 flex">
               <Link
                 className="h-fit"
                 rel="noreferrer"
@@ -322,10 +322,10 @@ export const Techstack = () => {
                 </li>
               </Link>
             </ul>
-            <li className="ml-5 mt-2 hidden font-bold sm:ml-0 sm:mt-0 lg:flex">
+            <li className="ml-5 mt-2 font-bold sm:ml-0 sm:mt-0 flex">
               Favorite Editor & Model
             </li>
-            <ul className="mb-5 hidden h-full w-full flex-row  flex-wrap justify-start pl-3 lg:flex">
+            <ul className="mb-5 h-full w-full flex-row  flex-wrap justify-start pl-3 flex">
               <Link
                 className="h-fit"
                 rel="noreferrer"
@@ -345,10 +345,10 @@ export const Techstack = () => {
                 </li>
               </Link>
             </ul>
-            <li className="ml-5 mt-2 hidden font-bold sm:ml-0 sm:mt-0 lg:flex">
+            <li className="ml-5 mt-2 font-bold sm:ml-0 sm:mt-0 flex">
               Libraries
             </li>
-            <ul className="mb-5 hidden h-full w-full flex-row flex-wrap justify-start pl-3 lg:flex">
+            <ul className="mb-5 h-full w-full flex-row flex-wrap justify-start pl-3 flex">
               <Link
                 className="h-fit"
                 rel="noreferrer"

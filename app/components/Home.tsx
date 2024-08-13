@@ -6,7 +6,7 @@ export const Home = () => {
   return (
     <section
       id="home"
-      className="z-9 relative top-0 flex h-screen w-full flex-col items-center justify-center bg-[length:105%_105%] bg-center bg-no-repeat py-28 transition-all duration-75"
+      className="z-9 relative top-0 flex h-[105dvh] w-full flex-col items-center justify-center bg-center bg-no-repeat py-28 transition-all duration-75"
     >
       <h1 className="z-10 mb-2 bg-opacity-75 text-4xl text-gray-100 backdrop-blur-sm backdrop-filter lg:text-6xl dark:bg-gray-100 dark:bg-opacity-50">
         hi, I&apos;m <br className="block lg:hidden" />

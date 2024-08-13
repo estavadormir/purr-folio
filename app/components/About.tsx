@@ -13,7 +13,7 @@ export const About = () => {
         alt="A picture of André longboarding in Luxembourg"
         width={1080}
         height={1482}
-        className="z-0 flex flex-row justify-center lg:w-1/2"
+        className="z-0 hidden lg:flex flex-row justify-center lg:w-1/2"
       />
       <div className="z-11 flex flex-col justify-center  lg:w-1/2">
         <h2 className="ml-5 mt-5 flex justify-center pl-2 text-4xl text-gray-100 lg:mb-2  lg:justify-start lg:text-6xl">
