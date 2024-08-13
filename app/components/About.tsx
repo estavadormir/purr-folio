@@ -6,6 +6,7 @@ export const About = () => {
     <section
       id="about"
       aria-label="About"
+      data-testid="about"
       className="z-11 relative flex w-full flex-col justify-center  bg-slate-900 lg:flex-row xl:min-h-screen"
     >
       <Image

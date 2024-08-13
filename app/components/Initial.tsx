@@ -2,10 +2,11 @@
 import Link from "next/link";
 import Typewriter from "typewriter-effect";
 
-export const Home = () => {
+export const Initial = () => {
   return (
     <section
       id="home"
+      data-testid="home"
       className="z-9 relative top-0 flex h-[105dvh] w-full flex-col items-center justify-center bg-center bg-no-repeat py-28 transition-all duration-75"
     >
       <h1 className="z-10 mb-2 bg-opacity-75 text-4xl text-gray-100 backdrop-blur-sm backdrop-filter lg:text-6xl dark:bg-gray-100 dark:bg-opacity-50">

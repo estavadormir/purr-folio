@@ -1,4 +1,4 @@
 export * from "./About";
 export * from "./Contacts";
-export * from "./Home";
-export * from "./Techstach";
+export * from "./Initial";
+export * from "./Techstack";

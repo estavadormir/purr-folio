@@ -6,6 +6,7 @@ export const Techstack = () => {
   return (
     <section
       id="techstack"
+      data-testid="techstack"
       className="z-13 relative top-0 flex h-screen w-full flex-col items-center justify-center bg-white bg-[length:105%_105%] bg-center bg-no-repeat transition-all duration-75"
     >
       <h1 className="mb-2 mt-5 flex px-10 text-xl text-black sm:pb-10 sm:text-4xl lg:text-6xl">
