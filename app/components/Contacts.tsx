@@ -1,10 +1,11 @@
 import Link from "next/link";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+
 export const Contacts = () => {
   return (
     <section
       id="contacts"
-      className="z-12 sticky flex h-screen w-full flex-col justify-center bg-slate-900 px-10 xl:min-h-screen"
+      className="z-12 relative flex h-screen w-full flex-col justify-center bg-slate-900 px-10 xl:min-h-screen"
     >
       <h2 className="flex-start font-display text-brand text-tiktokPink border-tiktokPink mb-4 flex border-b-2 font-bold uppercase lg:text-xl ">
         Contact

@@ -65,7 +65,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html className="scroll-smooth" lang="en">
       <Analytics />
       <body className={spaceMono.className}>{children}</body>
     </html>
