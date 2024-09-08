@@ -1,4 +1,3 @@
-import "@hairy-studios/ui/styles.css";
 import { Analytics } from "@vercel/analytics/react";
 import { Space_Mono } from "next/font/google";
 import "./globals.css";
