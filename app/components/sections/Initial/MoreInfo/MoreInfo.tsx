@@ -12,17 +12,6 @@ export interface MoreInfoProps {
   className?: string;
 }
 
-const linkStyles = twMerge([
-  'h-full w-full rounded',
-  'border-2 border-black',
-  'px-8 py-3',
-  'text-base xl:text-xl',
-  'relative',
-  'transition-colors duration-200',
-  'hover:bg-black hover:text-white',
-  'focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black',
-]);
-
 export const MoreInfo = ({ items, className }: MoreInfoProps) => {
   return (
     <>
@@ -32,12 +21,14 @@ export const MoreInfo = ({ items, className }: MoreInfoProps) => {
           className={twMerge('list-none', className)}
         >
           <Link
-            className={linkStyles}
+            className={twMerge(
+              'px-6 py-3 bg-tiktokAqua text-black rounded-lg',
+              'hover:bg-black hover:text-white',
+              'transition-colors duration-200',
+              'text-base xl:text-xl font-bold'
+            )}
             href={item.href}
             aria-label={item.ariaLabel || item.text}
-            rel={
-              item.href.startsWith('http') ? 'noopener noreferrer' : undefined
-            }
           >
             {item.text}
           </Link>

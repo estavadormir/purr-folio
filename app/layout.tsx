@@ -1,3 +1,4 @@
+import { ErrorBoundary } from '@/components';
 import { Space_Mono } from 'next/font/google';
 import './globals.css';
 
@@ -62,7 +63,9 @@ export default function RootLayout({
 }) {
   return (
     <html className="scroll-smooth" lang="en">
-      <body className={spaceMono.className}>{children}</body>
+      <ErrorBoundary>
+        <body className={spaceMono.className}>{children}</body>
+      </ErrorBoundary>
     </html>
   );
 }
