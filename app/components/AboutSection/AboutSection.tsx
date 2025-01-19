@@ -37,7 +37,7 @@ export const AboutSection = () => {
               </li>
             </Link>
             <Link
-              className={twMerge('h-fit')}
+              className={twMerge('h-fit hidden sm:flex')}
               rel="noreferrer"
               href="https://en.wikipedia.org/wiki/Time"
             >

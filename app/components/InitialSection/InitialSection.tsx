@@ -15,7 +15,7 @@ export const InitialSection = () => {
         )}
       >
         <h1 className={twMerge('mb-2 bg-opacity-75 text-4xl lg:text-6xl')}>
-          Hi, I'm <br className={twMerge('block lg:hidden')} />
+          Hi, I'm <br className={twMerge('hidden ')} />
           <span
             className={twMerge(
               ' relative text-brand-accent text-tiktokAqua h-20 overflow-x-hidden whitespace-nowrap pt-2'
@@ -23,7 +23,9 @@ export const InitialSection = () => {
           >
             André
           </span>
-          <div className={twMerge('text-xl font-light lg:text-3xl')}>
+          <div
+            className={twMerge('text-xl font-light lg:text-3xl text-center')}
+          >
             <Typewriter
               options={{
                 strings: [
@@ -42,7 +44,7 @@ export const InitialSection = () => {
         </h1>
         <ul
           className={twMerge(
-            '[&>li]:mb-10 [&>li>*]:bg-tiktokAqua z-10 flex flex-col items-center justify-center mt-5 cursor-pointer space-x-0.5 text-base font-bold lg:flex-row lg:space-x-1'
+            '[&>li]:mb-10 [&>li>*]:bg-tiktokAqua z-10 flex flex-col items-center justify-center mt-5 cursor-pointer space-x-0.5 text-base font-bold sm:flex-row lg:space-x-1'
           )}
         >
           <MoreInfo

@@ -19,9 +19,10 @@ export const TechstackSection = () => {
       <div className={twMerge('w-48 h-1 bg-tiktokPink ml-7 mt-2')}></div>
       <div className={twMerge('w-32 h-1 bg-tiktokPink ml-7 mt-1')}></div>
       <div className="flex flex-col mt-3 h-screen">
-        <ul className="w-full flex-col border-black px-5 pb-1 text-left font-medium text-white">
-          <div className="rounded border-2 border-black bg-white py-3 text-black hover:shadow-xl sm:px-10">
+        <ul className="w-full flex-col px-5 pb-1 text-left font-medium text-white">
+          <div className="rounded py-3 text-black sm:px-10">
             <li className="ml-5 font-bold sm:ml-0">CSS frameworks:</li>
+            <div className="h-1 bg-tiktokPink w-32  mt-1"></div>
             <ul className="mb-5 flex h-full w-full flex-row flex-wrap justify-start pl-3">
               <Link
                 className="h-fit"
@@ -43,6 +44,7 @@ export const TechstackSection = () => {
               </Link>
             </ul>
             <li className="ml-5 font-bold sm:ml-0">Languages:</li>
+            <div className="h-1 bg-tiktokPink w-32 mt-1"></div>
             <ul className="mb-5 flex h-full w-full flex-row flex-wrap justify-start pl-3">
               <Link
                 className="h-fit"
@@ -84,6 +86,7 @@ export const TechstackSection = () => {
             <li className="ml-5 mt-2 font-bold sm:ml-0 sm:mt-0">
               Testing libraries:
             </li>
+            <div className="h-1 bg-tiktokPink w-32 mt-1"></div>
             <ul className="mb-5 flex h-full w-full flex-row flex-wrap justify-start pl-3">
               <Link
                 className="h-fit"
@@ -123,6 +126,7 @@ export const TechstackSection = () => {
               </Link>
             </ul>
             <li className="ml-5 mt-2 font-bold sm:ml-0 sm:mt-0">Frameworks:</li>
+            <div className="h-1 bg-tiktokPink w-32 mt-1"></div>
             <ul className="mb-5 flex h-full w-full flex-row flex-wrap justify-start pl-3">
               <Link
                 className="h-fit"
@@ -164,6 +168,7 @@ export const TechstackSection = () => {
             <li className="ml-5 mt-2 hidden font-bold sm:ml-0 sm:mt-0 lg:flex">
               Runtime Environments
             </li>
+            <div className="h-1 bg-tiktokPink w-32 mt-1 hidden lg:block"></div>
             <ul className="mb-5 hidden h-full w-full flex-row flex-wrap justify-start pl-3 lg:flex">
               <Link
                 className="h-fit"
@@ -188,6 +193,7 @@ export const TechstackSection = () => {
             <li className="ml-5 mt-2 hidden font-bold sm:ml-0 sm:mt-0 lg:flex">
               CI/CD and tools
             </li>
+            <div className="h-1 bg-tiktokPink w-32 mt-1 hidden lg:block"></div>
             <ul className="mb-5 hidden h-full w-full flex-row flex-wrap justify-start pl-3 lg:flex">
               <Link
                 className="h-fit"
@@ -247,6 +253,7 @@ export const TechstackSection = () => {
             <li className="ml-5 mt-2 font-bold sm:ml-0 sm:mt-0 flex">
               Databases
             </li>
+            <div className="h-1 bg-tiktokPink w-32 mt-1"></div>
             <ul className="mb-5 h-full w-full flex-row  flex-wrap justify-start pl-3 flex">
               <Link
                 className="h-fit"
@@ -275,6 +282,7 @@ export const TechstackSection = () => {
             <li className="ml-5 mt-2 hidden font-bold sm:ml-0 sm:mt-0 lg:flex">
               Code quality
             </li>
+            <div className="h-1 bg-tiktokPink w-32 mt-1 hidden lg:block"></div>
             <ul className="mb-5 hidden h-full w-full flex-row flex-wrap justify-start pl-3 lg:flex">
               <Link
                 className="h-fit"
@@ -289,6 +297,7 @@ export const TechstackSection = () => {
             <li className="ml-5 mt-2 hidden font-bold sm:ml-0 sm:mt-0 lg:flex">
               Favorite Editor & AI assistants
             </li>
+            <div className="h-1 bg-tiktokPink w-32 mt-1 hidden lg:block"></div>
             <ul className="mb-5 hidden h-full w-full flex-row flex-wrap justify-start pl-3 lg:flex">
               <Link className="h-fit" rel="noreferrer" href="https://zed.dev/">
                 <li className="hover:bg-tiktokAqua mx-2 mt-2 flex h-full cursor-pointer rounded-lg border-2 border-black px-2 py-2 text-center">
@@ -308,6 +317,7 @@ export const TechstackSection = () => {
             <li className="ml-5 mt-2 font-bold sm:ml-0 sm:mt-0 flex">
               Libraries
             </li>
+            <div className="h-1 bg-tiktokPink w-32 mt-1"></div>
             <ul className="mb-5 h-full w-full flex-row flex-wrap justify-start pl-3 flex">
               <Link
                 className="h-fit"
@@ -340,6 +350,7 @@ export const TechstackSection = () => {
             <li className="ml-5 mt-2 hidden font-bold sm:ml-0 sm:mt-0 lg:flex">
               CMS
             </li>
+            <div className="h-1 bg-tiktokPink w-32 mt-1 hidden lg:block"></div>
             <ul className="mb-5 hidden h-full w-full flex-row flex-wrap justify-start pl-3 lg:flex">
               <Link
                 className="h-fit"
