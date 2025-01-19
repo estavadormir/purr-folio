@@ -1,25 +1,24 @@
-"use client";
-import Link from "next/link";
-import Typewriter from "typewriter-effect";
+'use client';
+import Link from 'next/link';
+import { twMerge } from 'tailwind-merge';
 
-export const Techstack = () => {
+export const TechstackSection = () => {
   return (
     <section
       id="techstack"
-      data-testid="techstack"
-      className="z-13 relative top-0 flex h-screen w-full flex-col items-center justify-center bg-white bg-[length:105%_105%] bg-center bg-no-repeat transition-all duration-75"
+      data-testid="techstackSection"
+      className="h-[110vh] z-13 relative top-0 flex w-full flex-col items-center justify-center bg-white"
     >
-      <h1 className="mb-2 mt-5 flex px-10 text-xl text-black sm:pb-10 sm:text-4xl lg:text-6xl">
-        <Typewriter
-          options={{
-            strings: ["Some of the Technologies that I use:", ":)"],
-            autoStart: true,
-            loop: true,
-          }}
-        />
-      </h1>
-      <div />
-      <div className="flex flex-col">
+      <h2
+        className={twMerge(
+          'ml-5 mt-5 flex justify-center pl-2 text-4xl text-slate-900 lg:mb-2 lg:justify-start lg:text-6xl'
+        )}
+      >
+        Tech stack
+      </h2>
+      <div className={twMerge('w-48 h-1 bg-tiktokPink ml-7 mt-2')}></div>
+      <div className={twMerge('w-32 h-1 bg-tiktokPink ml-7 mt-1')}></div>
+      <div className="flex flex-col mt-3 h-screen">
         <ul className="w-full flex-col border-black px-5 pb-1 text-left font-medium text-white">
           <div className="rounded border-2 border-black bg-white py-3 text-black hover:shadow-xl sm:px-10">
             <li className="ml-5 font-bold sm:ml-0">CSS frameworks:</li>
@@ -155,42 +154,10 @@ export const Techstack = () => {
               <Link
                 className="h-fit"
                 rel="noreferrer"
-                href="https://react.dev/"
+                href="https://astro.build"
               >
                 <li className="hover:bg-tiktokAqua mx-2 mt-2 flex h-full cursor-pointer rounded-lg border-2 border-black px-2 py-2 text-center">
-                  ReactJS
-                </li>
-              </Link>
-              <Link
-                className="h-fit"
-                rel="noreferrer"
-                href="https://angular.dev/"
-              >
-                <li className="hover:bg-tiktokAqua mx-2 mt-2 flex h-full cursor-pointer rounded-lg border-2 border-black px-2 py-2 text-center">
-                  Angular
-                </li>
-              </Link>
-            </ul>
-            <li className="ml-5 mt-2 hidden font-bold sm:ml-0 sm:mt-0 lg:flex">
-              Version control
-            </li>
-            <ul className="mb-5 hidden h-full w-full flex-row  flex-wrap justify-start pl-3 lg:flex">
-              <Link
-                className="h-fit"
-                rel="noreferrer"
-                href="https://git-scm.com/"
-              >
-                <li className="hover:bg-tiktokAqua mx-2 mt-2 flex h-full cursor-pointer rounded-lg border-2 border-black px-2 py-2 text-center">
-                  GIT
-                </li>
-              </Link>
-              <Link
-                className="h-fit"
-                rel="noreferrer"
-                href="https://subversion.apache.org/"
-              >
-                <li className="hover:bg-tiktokAqua mx-2 mt-2 flex h-full cursor-pointer rounded-lg border-2 border-black px-2 py-2 text-center">
-                  SVN
+                  Astro
                 </li>
               </Link>
             </ul>
@@ -210,6 +177,11 @@ export const Techstack = () => {
               <Link className="h-fit" rel="noreferrer" href="https://bun.sh/">
                 <li className="hover:bg-tiktokAqua mx-2 mt-2 flex h-full cursor-pointer rounded-lg border-2 border-black px-2 py-2 text-center">
                   Bun
+                </li>
+              </Link>
+              <Link className="h-fit" rel="noreferrer" href="https://deno.com/">
+                <li className="hover:bg-tiktokAqua mx-2 mt-2 flex h-full cursor-pointer rounded-lg border-2 border-black px-2 py-2 text-center">
+                  Deno 2.0
                 </li>
               </Link>
             </ul>
@@ -250,7 +222,7 @@ export const Techstack = () => {
                 href="https://docs.gitlab.com/runner/"
               >
                 <li className="hover:bg-tiktokAqua mx-2 mt-2 flex h-full cursor-pointer rounded-lg border-2 border-black px-2 py-2 text-center">
-                  GitLab runner
+                  GitLab CI/CD
                 </li>
               </Link>
               <Link
@@ -268,7 +240,7 @@ export const Techstack = () => {
                 href="https://betterstack.com/logs"
               >
                 <li className="hover:bg-tiktokAqua mx-2 mt-2 flex h-full cursor-pointer rounded-lg border-2 border-black px-2 py-2 text-center">
-                  Betterstack logs (former Logtail)
+                  Betterstack
                 </li>
               </Link>
             </ul>
@@ -299,20 +271,11 @@ export const Techstack = () => {
                   Redis
                 </li>
               </Link>
-              <Link
-                className="h-fit"
-                rel="noreferrer"
-                href="https://vercel.com/docs/storage/vercel-blob"
-              >
-                <li className="hover:bg-tiktokAqua mx-2 mt-2 flex h-full cursor-pointer rounded-lg border-2 border-black px-2 py-2 text-center">
-                  Blob store (vercel)
-                </li>
-              </Link>
             </ul>
-            <li className="ml-5 mt-2 font-bold sm:ml-0 sm:mt-0 flex">
+            <li className="ml-5 mt-2 hidden font-bold sm:ml-0 sm:mt-0 lg:flex">
               Code quality
             </li>
-            <ul className="mb-5  h-full w-full flex-row  flex-wrap justify-start pl-3 flex">
+            <ul className="mb-5 hidden h-full w-full flex-row flex-wrap justify-start pl-3 lg:flex">
               <Link
                 className="h-fit"
                 rel="noreferrer"
@@ -323,26 +286,22 @@ export const Techstack = () => {
                 </li>
               </Link>
             </ul>
-            <li className="ml-5 mt-2 font-bold sm:ml-0 sm:mt-0 flex">
-              Favorite Editor & Model
+            <li className="ml-5 mt-2 hidden font-bold sm:ml-0 sm:mt-0 lg:flex">
+              Favorite Editor & AI assistants
             </li>
-            <ul className="mb-5 h-full w-full flex-row  flex-wrap justify-start pl-3 flex">
-              <Link
-                className="h-fit"
-                rel="noreferrer"
-                href="https://code.visualstudio.com/"
-              >
+            <ul className="mb-5 hidden h-full w-full flex-row flex-wrap justify-start pl-3 lg:flex">
+              <Link className="h-fit" rel="noreferrer" href="https://zed.dev/">
                 <li className="hover:bg-tiktokAqua mx-2 mt-2 flex h-full cursor-pointer rounded-lg border-2 border-black px-2 py-2 text-center">
-                  VSCode
+                  Zed (vim_mode: true)
                 </li>
               </Link>
               <Link
                 className="h-fit"
                 rel="noreferrer"
-                href="https://supermaven.com/"
+                href="https://claude.ai/"
               >
                 <li className="hover:bg-tiktokAqua mx-2 mt-2 flex h-full cursor-pointer rounded-lg border-2 border-black px-2 py-2 text-center">
-                  Supermaven
+                  Claude
                 </li>
               </Link>
             </ul>
@@ -398,6 +357,15 @@ export const Techstack = () => {
               >
                 <li className="hover:bg-tiktokAqua mx-2 mt-2 flex h-full cursor-pointer rounded-lg border-2 border-black px-2 py-2 text-center">
                   Strapi
+                </li>
+              </Link>
+              <Link
+                className="h-fit"
+                rel="noreferrer"
+                href="https://www.notion.so/"
+              >
+                <li className="hover:bg-tiktokAqua mx-2 mt-2 flex h-full cursor-pointer rounded-lg border-2 border-black px-2 py-2 text-center">
+                  Notion (as a cms, works w)
                 </li>
               </Link>
             </ul>

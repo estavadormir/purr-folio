@@ -1,36 +1,42 @@
-import { Analytics } from "@vercel/analytics/react";
-import { Space_Mono } from "next/font/google";
-import "./globals.css";
-import { openGraphImage } from "./shared-metadata";
+import { Space_Mono } from 'next/font/google';
+import './globals.css';
 
 const spaceMono = Space_Mono({
-  subsets: ["latin"],
-  variable: "--font-mono",
-  weight: "400",
+  subsets: ['latin'],
+  variable: '--font-mono',
+  weight: '400',
 });
 export const metadata = {
-  title: "André - developer",
-  description: "Developer with 7 years of experience based in Luxembourg",
+  title: 'André - frontend developer',
+  description:
+    'Frontend developer with 7 years of experience based in Luxembourg',
   openGraph: {
-    ...openGraphImage,
-    title: "André - developer",
-    description: "Developer with 7 years of experience based in Luxembourg",
-    siteName: "Professional Portfolio",
-    locale: "en_US",
-    themeColor: "white",
-    url: "https://andrelikescomputers.dev/",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Experienced Developer in Luxembourg",
+    title: 'André - frontend developer',
     description:
-      "Explore the portfolio of a seasoned developer with 7 years of experience in Luxembourg. Find out more about my expertise, projects, and professional journey.",
+      'Frontend developer with 7 years of experience based in Luxembourg',
+    siteName: 'Professional Portfolio',
+    locale: 'en_US',
+    url: 'https://andrelikescomputers.dev/',
     images: [
       {
-        url: "/snow.jpg",
-        width: 800,
-        height: 600,
-        alt: "Profile picture of the developer.",
+        url: 'https://avatars.githubusercontent.com/u/48385244?s=400&u=31940a136947684b2d4efaf691039281ee0f3787&v=4',
+        width: 460,
+        height: 460,
+        alt: 'Profile picture of the developer.',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Experienced frontend Developer in Luxembourg',
+    description:
+      'Explore the portfolio of a seasoned developer with 7 years of experience in Luxembourg. Find out more about my expertise, projects, and professional journey.',
+    images: [
+      {
+        url: 'https://avatars.githubusercontent.com/u/48385244?s=400&u=31940a136947684b2d4efaf691039281ee0f3787&v=4',
+        width: 460,
+        height: 460,
+        alt: 'Profile picture of the developer.',
       },
     ],
   },
@@ -42,9 +48,9 @@ export const metadata = {
       index: true,
       follow: true,
       noimageindex: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
     },
   },
 };
@@ -56,7 +62,6 @@ export default function RootLayout({
 }) {
   return (
     <html className="scroll-smooth" lang="en">
-      <Analytics />
       <body className={spaceMono.className}>{children}</body>
     </html>
   );

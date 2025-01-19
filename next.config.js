@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 module.exports = {
   i18n: {
-    locales: ["en"],
-    defaultLocale: "en",
+    locales: ['en'],
+    defaultLocale: 'en',
   },
-  transpilePackages: ["ui"],
+  transpilePackages: ['ui'],
 };
