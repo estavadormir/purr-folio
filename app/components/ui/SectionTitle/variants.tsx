@@ -11,7 +11,9 @@ export const InitialTitle = ({ title, subtitle, className }: TitleProps) => (
   <div className={twMerge('flex flex-col', className)}>
     <h2 className="ml-5 mt-5 flex justify-center pl-2 text-4xl text-gray-100 lg:mb-2 lg:justify-start lg:text-6xl">
       {title}
-      {subtitle && <span className="text-tiktokAqua ml-2">{subtitle}</span>}
+      {subtitle && (
+        <span className="text-tiktokAqua ml-4 lg:ml-6">{subtitle}</span>
+      )}
     </h2>
     <div className="w-48 h-1 bg-tiktokPink ml-7 mt-2" />
     <div className="w-32 h-1 bg-tiktokPink ml-7 mt-1" />

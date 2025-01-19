@@ -37,7 +37,8 @@ export const InitialSection = () => {
             <ul
               className={twMerge(
                 'flex flex-col sm:flex-row items-center justify-center',
-                'space-y-4 sm:space-y-0 sm:space-x-4'
+                'space-y-6 sm:space-y-0 sm:space-x-4', // Increased mobile spacing
+                'px-4 sm:px-0 w-full sm:w-auto' // Added padding for mobile
               )}
             >
               <MoreInfo

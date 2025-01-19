@@ -18,7 +18,7 @@ export const AboutItem = ({ item, className }: AboutItemProps) => (
     rel="noreferrer"
     href={item.url}
   >
-    <li className="hover:text-tiktokPink cursor-pointer transition-colors duration-200">
+    <li className="hover:text-tiktokPink cursor-pointer transition-colors duration-200 text-base sm:text-lg text-white">
       {item.icon} {item.text}
     </li>
   </Link>

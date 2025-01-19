@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import { twMerge } from 'tailwind-merge';
-
 export interface MoreInfoItem {
   href: string;
   text: string;
@@ -18,14 +17,15 @@ export const MoreInfo = ({ items, className }: MoreInfoProps) => {
       {items.map((item, index) => (
         <li
           key={`more-info-${item.href}-${index}`}
-          className={twMerge('list-none', className)}
+          className={twMerge('list-none w-full sm:w-auto', className)}
         >
           <Link
             className={twMerge(
               'px-6 py-3 bg-tiktokAqua text-black rounded-lg',
               'hover:bg-black hover:text-white',
               'transition-colors duration-200',
-              'text-base xl:text-xl font-bold'
+              'text-base xl:text-lg font-bold',
+              'w-full block text-center sm:w-auto'
             )}
             href={item.href}
             aria-label={item.ariaLabel || item.text}
