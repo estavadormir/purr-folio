@@ -35,6 +35,20 @@ export const ContactSection = () => (
           className="text-white text-base sm:text-lg"
         />
       </div>
+
+      <div className="mt-12 text-center">
+        <p className="text-gray-400 text-sm mb-2">
+          Want to build something similar?
+        </p>
+        <a
+          href="https://github.com/estavadormir/intro-template"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-tiktokAqua hover:text-tiktokPink transition-colors duration-200 text-sm"
+        >
+          Check out my Next.js template
+        </a>
+      </div>
     </div>
   </section>
 );
