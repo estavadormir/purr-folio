@@ -20,6 +20,7 @@ export const Section = ({
 }: SectionProps) => (
   <section
     id={id}
+    aria-label={id}
     className={twMerge(
       'h-screen relative flex w-full flex-col justify-center',
       className
