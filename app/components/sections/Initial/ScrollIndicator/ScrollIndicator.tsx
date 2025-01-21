@@ -24,7 +24,7 @@ export const ScrollIndicator = () => {
     <div
       data-testid="scroll-indicator"
       className={twMerge(
-        'fixed bottom-8 left-[50%] -translate-x-[50%] animate-bounce w-8 mx-auto'
+        'fixed inset-x-0 bottom-8 flex justify-center animate-bounce'
       )}
       aria-hidden="true"
     >
@@ -36,7 +36,7 @@ export const ScrollIndicator = () => {
         />
         <ChevronDown
           data-testid="scroll-indicator-icon"
-          className={twMerge('relative h-8 w-8 text-white')}
+          className={twMerge('relative h-10 w-10 text-white')}
         />
       </div>
       <span className={twMerge('sr-only')}>Scroll down for more content</span>

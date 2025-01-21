@@ -23,23 +23,17 @@ export const ContactSection = () => (
           href="mailto:andrelikescomputers@gmail.com"
           icon={MdEmail}
           className="text-white text-base sm:text-lg"
-        >
-          Email
-        </SocialLink>
+        />
         <SocialLink
           href="https://www.linkedin.com/in/andrelikescomputers/"
           icon={FaLinkedin}
           className="text-white text-base sm:text-lg"
-        >
-          LinkedIn
-        </SocialLink>
+        />
         <SocialLink
           href="https://github.com/estavadormir/"
           icon={FaGithub}
           className="text-white text-base sm:text-lg"
-        >
-          GitHub
-        </SocialLink>
+        />
       </div>
 
       {/* Template link section */}

@@ -5,7 +5,7 @@ import { twMerge } from 'tailwind-merge';
 interface SocialLinkProps {
   href: string;
   icon?: IconType;
-  children: React.ReactNode;
+  children?: React.ReactNode;
   className?: string;
 }
 
