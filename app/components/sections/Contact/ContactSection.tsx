@@ -1,5 +1,5 @@
 import { SectionTitle, SocialLink } from '@/components/ui';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
 
 export const ContactSection = () => (
@@ -22,11 +22,6 @@ export const ContactSection = () => (
         <SocialLink
           href="mailto:andrelikescomputers@gmail.com"
           icon={MdEmail}
-          className="text-white text-base sm:text-lg"
-        />
-        <SocialLink
-          href="https://www.linkedin.com/in/andrelikescomputers/"
-          icon={FaLinkedin}
           className="text-white text-base sm:text-lg"
         />
         <SocialLink
