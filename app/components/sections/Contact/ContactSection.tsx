@@ -15,8 +15,9 @@ export const ContactSection = () => (
         variant="contact"
       />
       <p className="text-gray-400 text-base sm:text-lg mt-4 mb-6">
-        Pick up a pen, write down your thoughts and reach me out through one of
-        the options below, I'm sure we can work something out.
+        {
+          "Pick up a pen, write down your thoughts and reach me out through one of the options below, I'm sure we can work something out."
+        }
       </p>
       <div className="flex flex-row items-start sm:items-center gap-4 sm:gap-6 border-t border-tiktokPink pt-4">
         <SocialLink
@@ -29,21 +30,6 @@ export const ContactSection = () => (
           icon={FaGithub}
           className="text-white text-base sm:text-lg"
         />
-      </div>
-
-      {/* Template link section */}
-      <div className="mt-12 text-center">
-        <p className="text-gray-400 text-sm mb-2">
-          Want to build something similar?
-        </p>
-        <a
-          href="https://github.com/estavadormir/intro-template"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-tiktokAqua hover:text-tiktokPink transition-colors duration-200 text-sm"
-        >
-          Check out my Next.js template
-        </a>
       </div>
     </div>
   </section>

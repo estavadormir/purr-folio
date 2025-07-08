@@ -1,3 +1,8 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@theme {
+  --color-primary: #fce2b8;
+  --color-secondary: #da2001;
+  --color-tiktokPink: #ff0050;
+  --color-tiktokAqua: #00f2ea;
+}

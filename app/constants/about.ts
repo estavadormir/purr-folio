@@ -10,7 +10,7 @@ export const ABOUT_ITEMS: AboutItem[] = [
     icon: '👷‍♀️',
     text: '7 years of experience in different companies, including a few startups, space sector and the financial sector.',
     url: 'https://en.wikipedia.org/wiki/Time',
-    hide: 'mobile', // Only show on desktop
+    hide: 'mobile',
   },
   {
     icon: '📕',

@@ -1,9 +1,6 @@
-import sharedConfig from '@hairy-studios/tailwind-config';
-
 import type { Config } from 'tailwindcss';
 
-const config: Pick<Config, 'content' | 'presets'> = {
-  content: ['./app/**/*.tsx'],
-  presets: [sharedConfig],
+const config: Pick<Config, 'content'> = {
+  content: ['./app/**/*.{js,ts,jsx,tsx,mdx}'],
 };
 export default config;
