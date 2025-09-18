@@ -6,3 +6,61 @@
   --color-tiktokPink: #ff0050;
   --color-tiktokAqua: #00f2ea;
 }
+
+.custom-scrollbar-horizontal {
+  scrollbar-width: thin;
+  scrollbar-color: #ff0050 transparent;
+}
+
+.custom-scrollbar-horizontal::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+
+.custom-scrollbar-horizontal::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.custom-scrollbar-horizontal::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg, #ff0050 0%, #00f2ea 100%);
+  border-radius: 10px;
+}
+
+.custom-scrollbar-horizontal::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(90deg, #e6004a 0%, #00d9d1 100%);
+}
+
+@keyframes slideInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.custom-scrollbar-vertical {
+  scrollbar-width: thin;
+  scrollbar-color: #ff0050 transparent;
+}
+
+.custom-scrollbar-vertical::-webkit-scrollbar {
+  width: 4px;
+}
+
+.custom-scrollbar-vertical::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar-vertical::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #ff0050 0%, #00f2ea 100%);
+  border-radius: 10px;
+}
+
+.custom-scrollbar-vertical::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #e6004a 0%, #00d9d1 100%);
+}
+

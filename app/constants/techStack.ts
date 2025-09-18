@@ -25,6 +25,21 @@ export const TECH_STACK: TechStack = {
         description: 'JavaScript with syntax for types',
       },
       {
+        name: 'JavaScript',
+        url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
+        description: 'Dynamic programming language',
+      },
+      {
+        name: 'Go',
+        url: 'https://golang.org/',
+        description: 'Fast, simple, reliable language',
+      },
+      {
+        name: 'Python',
+        url: 'https://www.python.org/',
+        description: 'Versatile programming language',
+      },
+      {
         name: 'PHP',
         url: 'https://www.php.net/',
         description: 'Server-side scripting language',
@@ -75,14 +90,34 @@ export const TECH_STACK: TechStack = {
         description: 'React Framework for Production',
       },
       {
+        name: 'React',
+        url: 'https://reactjs.org/',
+        description: 'Library for building user interfaces',
+      },
+      {
         name: 'SolidJS',
         url: 'https://www.solidjs.com/',
         description: 'Simple and performant reactivity',
       },
       {
+        name: 'Angular',
+        url: 'https://angular.io/',
+        description: 'Platform for building mobile and desktop web applications',
+      },
+      {
         name: 'Laravel',
         url: 'https://laravel.com/',
         description: 'PHP Web Application Framework',
+      },
+      {
+        name: 'NestJS',
+        url: 'https://nestjs.com/',
+        description: 'Progressive Node.js framework',
+      },
+      {
+        name: 'FastAPI',
+        url: 'https://fastapi.tiangolo.com/',
+        description: 'Modern, fast web framework for building APIs with Python',
       },
       {
         name: 'Astro',
@@ -147,7 +182,7 @@ export const TECH_STACK: TechStack = {
     ],
   },
   DATABASES: {
-    title: 'Databases',
+    title: 'Databases & Analytics',
     items: [
       {
         name: 'PostgreSQL',
@@ -163,6 +198,11 @@ export const TECH_STACK: TechStack = {
         name: 'Redis',
         url: 'https://redis.io/',
         description: 'In-memory data structure store',
+      },
+      {
+        name: 'Trino',
+        url: 'https://trino.io/',
+        description: 'Fast distributed SQL query engine',
       },
     ],
   },
@@ -192,7 +232,7 @@ export const TECH_STACK: TechStack = {
     ],
   },
   LIBRARIES: {
-    title: 'Libraries',
+    title: 'Libraries & Tools',
     items: [
       {
         name: 'Tanstack Query',
@@ -200,9 +240,54 @@ export const TECH_STACK: TechStack = {
         description: 'Powerful data synchronization',
       },
       {
+        name: 'GraphQL',
+        url: 'https://graphql.org/',
+        description: 'Query language for APIs',
+      },
+      {
         name: 'Framer Motion',
         url: 'https://www.framer.com/motion/',
         description: 'Production-ready animation library',
+      },
+      {
+        name: 'Docker',
+        url: 'https://www.docker.com/',
+        description: 'Containerization platform',
+      },
+      {
+        name: 'Git',
+        url: 'https://git-scm.com/',
+        description: 'Distributed version control system',
+      },
+      {
+        name: 'CesiumJS',
+        url: 'https://cesium.com/',
+        description: '3D globes and maps for the web',
+      },
+      {
+        name: 'SQLC',
+        url: 'https://sqlc.dev/',
+        description: 'Generate type-safe Go from SQL',
+      },
+      {
+        name: 'RabbitMQ',
+        url: 'https://www.rabbitmq.com/',
+        description: 'Reliable message broker',
+      },
+      {
+        name: 'Redux',
+        url: 'https://redux.js.org/',
+        description: 'Predictable state container',
+      },
+      {
+        name: 'Zod',
+        url: 'https://zod.dev/',
+        description: 'TypeScript-first schema validation',
+      },
+      {
+        name: 'MJML',
+        url: 'https://mjml.io/',
+        description: 'Responsive email framework',
       },
       {
         name: 'Changeset',
@@ -228,6 +313,86 @@ export const TECH_STACK: TechStack = {
         name: 'Notion',
         url: 'https://www.notion.so/',
         description: 'All-in-one workspace & CMS',
+      },
+    ],
+  },
+  CLOUD: {
+    title: 'Cloud & Hosting',
+    items: [
+      {
+        name: 'AWS',
+        url: 'https://aws.amazon.com/',
+        description: 'Amazon Web Services cloud platform',
+      },
+      {
+        name: 'Azure',
+        url: 'https://azure.microsoft.com/',
+        description: 'Microsoft cloud computing platform',
+      },
+      {
+        name: 'Vercel',
+        url: 'https://vercel.com/',
+        description: 'Frontend cloud platform',
+      },
+      {
+        name: 'Heroku',
+        url: 'https://www.heroku.com/',
+        description: 'Cloud platform as a service',
+      },
+      {
+        name: 'Railway',
+        url: 'https://railway.app/',
+        description: 'Modern app hosting platform',
+      },
+      {
+        name: 'Cloudflare',
+        url: 'https://www.cloudflare.com/',
+        description: 'Web infrastructure and security',
+      },
+    ],
+  },
+  MONITORING: {
+    title: 'Monitoring & DevOps',
+    items: [
+      {
+        name: 'Kubernetes',
+        url: 'https://kubernetes.io/',
+        description: 'Container orchestration platform',
+      },
+      {
+        name: 'Podman',
+        url: 'https://podman.io/',
+        description: 'Daemonless container engine',
+      },
+      {
+        name: 'Grafana',
+        url: 'https://grafana.com/',
+        description: 'Open source analytics platform',
+      },
+      {
+        name: 'Prometheus',
+        url: 'https://prometheus.io/',
+        description: 'Monitoring system and time series database',
+      },
+      {
+        name: 'Coolify',
+        url: 'https://coolify.io/',
+        description: 'Self-hosted Heroku / Netlify alternative',
+      },
+    ],
+  },
+  DOCUMENTATION: {
+    title: 'Documentation',
+    items: [
+      {
+        name: 'Astro Starlight',
+        url: 'https://starlight.astro.build/',
+        description: 'Documentation site generator built on Astro',
+      },
+      {
+        name: 'Docusaurus',
+        url: 'https://docusaurus.io/',
+        description: 'Modern static website generator for documentation',
       },
     ],
   },

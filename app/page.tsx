@@ -17,14 +17,12 @@ const App: NextPage = () => {
         <AboutSection />
       </div>
       <div className="h-screen sticky top-0 z-30">
-        <TechstackSection part="first" bgColor="bg-white" />
+        <TechstackSection bgColor="bg-gradient-to-br from-white via-slate-50 to-slate-100" />
       </div>
-      <div className="h-screen sticky top-0 z-30">
-        <TechstackSection part="second" bgColor="bg-slate-100" />
-      </div>
-      <div className="h-screen sticky top-0 z-40">
+      <div className="h-screen sticky top-0 z-50">
         <ContactSection />
       </div>
+      <div className="h-screen"></div>
     </main>
   );
 };
