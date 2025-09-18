@@ -2,6 +2,7 @@ import {
   AboutSection,
   ContactSection,
   InitialSection,
+  ProjectsSection,
   TechstackSection,
 } from '@/components';
 import type { NextPage } from 'next';
@@ -18,6 +19,9 @@ const App: NextPage = () => {
       </div>
       <div className="h-screen sticky top-0 z-30">
         <TechstackSection bgColor="bg-gradient-to-br from-white via-slate-50 to-slate-100" />
+      </div>
+      <div className="h-screen sticky top-0 z-40">
+        <ProjectsSection />
       </div>
       <div className="h-screen sticky top-0 z-50">
         <ContactSection />

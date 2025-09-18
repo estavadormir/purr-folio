@@ -62,6 +62,9 @@ export default function RootLayout({
 }) {
   return (
     <html className="scroll-smooth" lang="en">
+      <head>
+        <script defer data-domain="andrelikescomputers.dev" src="https://coffee.hairybulbs.com/js/script.js"></script>
+      </head>
       <body className={spaceMono.className}>{children}</body>
     </html>
   );
