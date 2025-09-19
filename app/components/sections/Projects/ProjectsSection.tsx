@@ -1,8 +1,7 @@
 'use client';
 import { ProjectCard, SectionTitle } from '@/components/ui';
 import { twMerge } from 'tailwind-merge';
-import { useRef, useState, useEffect } from 'react';
-import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import { useRef } from 'react';
 
 interface Project {
   title: string;
@@ -50,42 +49,6 @@ export const ProjectsSection = ({
   bgColor = 'bg-gradient-to-br from-gray-900 via-slate-800 to-gray-900',
 }: ProjectsSectionProps) => {
   const scrollRef = useRef<HTMLDivElement>(null);
-  const [canScrollLeft, setCanScrollLeft] = useState(false);
-  const [canScrollRight, setCanScrollRight] = useState(true);
-
-  const checkScrollButtons = () => {
-    if (scrollRef.current) {
-      const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current;
-      setCanScrollLeft(scrollLeft > 0);
-      setCanScrollRight(scrollLeft < scrollWidth - clientWidth - 1);
-    }
-  };
-
-  useEffect(() => {
-    const scrollElement = scrollRef.current;
-    if (scrollElement) {
-      scrollElement.addEventListener('scroll', checkScrollButtons);
-      checkScrollButtons();
-      return () =>
-        scrollElement.removeEventListener('scroll', checkScrollButtons);
-    }
-  }, []);
-
-  const scroll = (direction: 'left' | 'right') => {
-    if (scrollRef.current) {
-      const scrollAmount = 400;
-      const currentScroll = scrollRef.current.scrollLeft;
-      const targetScroll =
-        direction === 'left'
-          ? currentScroll - scrollAmount
-          : currentScroll + scrollAmount;
-
-      scrollRef.current.scrollTo({
-        left: targetScroll,
-        behavior: 'smooth',
-      });
-    }
-  };
 
   return (
     <section
