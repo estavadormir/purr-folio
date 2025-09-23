@@ -4,6 +4,8 @@
   "private": true,
   "description": "A modern Next.js portfolio template with TailwindCSS, TypeScript, and purr-ui components",
   "keywords": ["nextjs", "portfolio", "template", "tailwindcss", "typescript", "purr-ui"],
+  "author": "Andre <andrelikescomputers@gmail.com>",
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
