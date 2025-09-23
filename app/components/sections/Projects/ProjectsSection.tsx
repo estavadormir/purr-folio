@@ -1,4 +1,4 @@
-import { ProjectCard } from '@hairy-studios/purr-ui';
+import { ProjectCard } from '@estavadormir/purr-ui';
 import { SectionContainer, SectionHeader } from '@/components/ui';
 import { PROJECTS } from '@/constants';
 
@@ -11,8 +11,9 @@ export const ProjectsSection = ({
 }: ProjectsSectionProps) => {
   const subtitle = (
     <>
-      A collection of projects I've worked on, from web applications to content platforms.
-      Each one taught me something new about building great user experiences. Some were featured on{' '}
+      A collection of projects I've worked on, from web applications to content
+      platforms. Each one taught me something new about building great user
+      experiences. Some were featured on{' '}
       <a
         href="https://astro.build/blog/whats-new-june-2025/"
         target="_blank"
@@ -20,7 +21,8 @@ export const ProjectsSection = ({
         className="accent-text hover:text-accent-primary transition-colors underline"
       >
         Astro's showcase
-      </a> and various tech communities.
+      </a>{' '}
+      and various tech communities.
     </>
   );
 
@@ -64,14 +66,29 @@ export const ProjectsSection = ({
           <div className="flex items-center justify-center gap-2 mt-4 text-gray-500">
             <div className="flex items-center gap-1">
               <div className="w-1 h-1 bg-accent-primary rounded-full animate-pulse"></div>
-              <div className="w-1 h-1 bg-accent-secondary rounded-full animate-pulse" style={{ animationDelay: '0.2s' }}></div>
-              <div className="w-1 h-1 bg-accent-primary rounded-full animate-pulse" style={{ animationDelay: '0.4s' }}></div>
+              <div
+                className="w-1 h-1 bg-accent-secondary rounded-full animate-pulse"
+                style={{ animationDelay: '0.2s' }}
+              ></div>
+              <div
+                className="w-1 h-1 bg-accent-primary rounded-full animate-pulse"
+                style={{ animationDelay: '0.4s' }}
+              ></div>
             </div>
             <span className="body-small">Swipe to explore</span>
             <div className="flex items-center gap-1">
-              <div className="w-1 h-1 bg-accent-secondary rounded-full animate-pulse" style={{ animationDelay: '0.1s' }}></div>
-              <div className="w-1 h-1 bg-accent-primary rounded-full animate-pulse" style={{ animationDelay: '0.3s' }}></div>
-              <div className="w-1 h-1 bg-accent-secondary rounded-full animate-pulse" style={{ animationDelay: '0.5s' }}></div>
+              <div
+                className="w-1 h-1 bg-accent-secondary rounded-full animate-pulse"
+                style={{ animationDelay: '0.1s' }}
+              ></div>
+              <div
+                className="w-1 h-1 bg-accent-primary rounded-full animate-pulse"
+                style={{ animationDelay: '0.3s' }}
+              ></div>
+              <div
+                className="w-1 h-1 bg-accent-secondary rounded-full animate-pulse"
+                style={{ animationDelay: '0.5s' }}
+              ></div>
             </div>
           </div>
         </div>

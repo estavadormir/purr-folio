@@ -1,5 +1,5 @@
 'use client';
-import { SectionTitle } from '@hairy-studios/purr-ui';
+import { SectionTitle } from '@hairy-estavadormir/purr-ui';
 import { CategorySection } from '@/components/ui';
 import { TECH_STACK } from '@/constants';
 import { twMerge } from 'tailwind-merge';
@@ -31,7 +31,8 @@ export const TechstackSection = ({
     if (scrollElement) {
       scrollElement.addEventListener('scroll', checkScrollButtons);
       checkScrollButtons();
-      return () => scrollElement.removeEventListener('scroll', checkScrollButtons);
+      return () =>
+        scrollElement.removeEventListener('scroll', checkScrollButtons);
     }
   }, []);
 
@@ -39,13 +40,14 @@ export const TechstackSection = ({
     if (scrollRef.current) {
       const scrollAmount = 400;
       const currentScroll = scrollRef.current.scrollLeft;
-      const targetScroll = direction === 'left'
-        ? currentScroll - scrollAmount
-        : currentScroll + scrollAmount;
+      const targetScroll =
+        direction === 'left'
+          ? currentScroll - scrollAmount
+          : currentScroll + scrollAmount;
 
       scrollRef.current.scrollTo({
         left: targetScroll,
-        behavior: 'smooth'
+        behavior: 'smooth',
       });
     }
   };
@@ -54,10 +56,7 @@ export const TechstackSection = ({
     <section
       id="techstack"
       data-testid="techstackSection"
-      className={twMerge(
-        'h-screen w-full flex flex-col',
-        bgColor
-      )}
+      className={twMerge('h-screen w-full flex flex-col', bgColor)}
     >
       <div className="h-full flex flex-col">
         <div className="flex-shrink-0 py-6 sm:py-8 text-center">
@@ -104,14 +103,29 @@ export const TechstackSection = ({
             <div className="sm:hidden flex items-center gap-2 text-gray-600">
               <div className="flex items-center gap-1">
                 <div className="w-1 h-1 bg-gray-400 rounded-full animate-pulse"></div>
-                <div className="w-1 h-1 bg-gray-400 rounded-full animate-pulse" style={{ animationDelay: '0.2s' }}></div>
-                <div className="w-1 h-1 bg-gray-400 rounded-full animate-pulse" style={{ animationDelay: '0.4s' }}></div>
+                <div
+                  className="w-1 h-1 bg-gray-400 rounded-full animate-pulse"
+                  style={{ animationDelay: '0.2s' }}
+                ></div>
+                <div
+                  className="w-1 h-1 bg-gray-400 rounded-full animate-pulse"
+                  style={{ animationDelay: '0.4s' }}
+                ></div>
               </div>
               <span className="text-xs text-gray-500">Swipe to explore</span>
               <div className="flex items-center gap-1">
-                <div className="w-1 h-1 bg-gray-400 rounded-full animate-pulse" style={{ animationDelay: '0.1s' }}></div>
-                <div className="w-1 h-1 bg-gray-400 rounded-full animate-pulse" style={{ animationDelay: '0.3s' }}></div>
-                <div className="w-1 h-1 bg-gray-400 rounded-full animate-pulse" style={{ animationDelay: '0.5s' }}></div>
+                <div
+                  className="w-1 h-1 bg-gray-400 rounded-full animate-pulse"
+                  style={{ animationDelay: '0.1s' }}
+                ></div>
+                <div
+                  className="w-1 h-1 bg-gray-400 rounded-full animate-pulse"
+                  style={{ animationDelay: '0.3s' }}
+                ></div>
+                <div
+                  className="w-1 h-1 bg-gray-400 rounded-full animate-pulse"
+                  style={{ animationDelay: '0.5s' }}
+                ></div>
               </div>
             </div>
           </div>
@@ -122,25 +136,24 @@ export const TechstackSection = ({
             ref={scrollRef}
             className="h-full overflow-x-auto overflow-y-hidden custom-scrollbar-horizontal scroll-smooth"
           >
-            <div className="flex gap-4 sm:gap-6 lg:gap-8 h-full px-4 sm:px-6 lg:px-8 pb-8 justify-center sm:justify-start" style={{ width: 'max-content' }}>
+            <div
+              className="flex gap-4 sm:gap-6 lg:gap-8 h-full px-4 sm:px-6 lg:px-8 pb-8 justify-center sm:justify-start"
+              style={{ width: 'max-content' }}
+            >
               {categories.map((category, index) => (
                 <div
                   key={category.title}
                   className="flex-shrink-0 w-72 sm:w-80 lg:w-96 h-full flex flex-col py-4"
                   style={{
-                    animation: `slideInFromRight 0.6s ease-out ${index * 0.1}s both`
+                    animation: `slideInFromRight 0.6s ease-out ${index * 0.1}s both`,
                   }}
                 >
-                  <CategorySection
-                    category={category}
-                    className="h-full"
-                  />
+                  <CategorySection category={category} className="h-full" />
                 </div>
               ))}
               <div className="flex-shrink-0 w-8"></div>
             </div>
           </div>
-
         </div>
       </div>
     </section>
