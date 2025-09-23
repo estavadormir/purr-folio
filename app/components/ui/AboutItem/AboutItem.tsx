@@ -24,7 +24,7 @@ export const AboutItem = ({ item, className }: AboutItemProps) => (
         <div className="text-2xl sm:text-3xl group-hover:scale-110 transition-transform duration-300">
           {item.icon}
         </div>
-        <span className="text-white text-base sm:text-lg lg:text-xl font-medium group-hover:text-tiktokAqua transition-colors duration-300">
+        <span className="text-white text-base sm:text-lg lg:text-xl font-medium group-hover:text-accent-secondary transition-colors duration-300">
           {item.text}
         </span>
       </div>

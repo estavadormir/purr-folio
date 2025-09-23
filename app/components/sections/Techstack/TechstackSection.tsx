@@ -63,15 +63,13 @@ export const TechstackSection = ({
           <SectionTitle title="Tech Stack" variant="tech" />
           <div className="mt-4 flex items-center justify-center gap-4 text-gray-600 text-sm">
             <div className="flex items-center gap-2">
-              <div className="w-6 h-1 bg-gradient-to-r from-tiktokPink to-tiktokAqua rounded-full"></div>
+              <div className="w-6 h-1 bg-gradient-to-r from-accent-primary to-accent-secondary rounded-full"></div>
               <span>Explore the tech realm</span>
-              <div className="w-6 h-1 bg-gradient-to-r from-tiktokAqua to-tiktokPink rounded-full"></div>
+              <div className="w-6 h-1 bg-gradient-to-r from-accent-secondary to-accent-primary rounded-full"></div>
             </div>
           </div>
 
-          {/* Navigation - Desktop Switch, Mobile Swipe Indicator */}
           <div className="mt-6 flex items-center justify-center">
-            {/* Desktop Navigation Switch */}
             <div className="hidden sm:flex items-center bg-gray-100 rounded-full p-1 shadow-inner border border-gray-200">
               <button
                 onClick={() => scroll('left')}
@@ -102,7 +100,6 @@ export const TechstackSection = ({
               </button>
             </div>
 
-            {/* Mobile Swipe Indicator */}
             <div className="sm:hidden flex items-center gap-2 text-gray-600">
               <div className="flex items-center gap-1">
                 <div className="w-1 h-1 bg-gray-400 rounded-full animate-pulse"></div>

@@ -31,7 +31,7 @@ export const ScrollIndicator = () => {
       <div className={twMerge('relative')}>
         <div
           className={twMerge(
-            'absolute -inset-0.5 bg-tiktokAqua rounded-full blur opacity-75 animate-pulse'
+            'absolute -inset-0.5 bg-accent-secondary rounded-full blur opacity-75 animate-pulse'
           )}
         />
         <ChevronDown

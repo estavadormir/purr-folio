@@ -21,7 +21,7 @@ export const MoreInfo = ({ items, className }: MoreInfoProps) => {
         >
           <Link
             className={twMerge(
-              'px-6 py-3 bg-tiktokAqua text-black rounded-lg',
+              'px-6 py-3 bg-accent-secondary text-black rounded-lg',
               'hover:bg-black hover:text-white',
               'transition-colors duration-200',
               'text-base xl:text-lg font-bold',

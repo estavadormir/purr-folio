@@ -5,7 +5,7 @@ export const SECTIONS: Section[] = [
     id: 'home',
     title: "Hi, I'm André",
     subtitle: 'Frontend Developer',
-    className: 'bg-tiktokPink',
+    className: 'bg-accent-primary',
   },
   {
     id: 'about',

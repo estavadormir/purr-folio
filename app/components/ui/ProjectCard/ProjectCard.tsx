@@ -16,7 +16,6 @@ export const ProjectCard = ({
   title,
   description,
   url,
-  featured = false,
   technologies,
   image,
   className
@@ -31,7 +30,6 @@ export const ProjectCard = ({
     )}
   >
     <div className="relative h-64 sm:h-80 overflow-hidden rounded-lg border border-gray-700 bg-gray-800">
-      {/* Background Image with Overlay */}
       {image ? (
         <div
           className="absolute inset-0 bg-cover bg-center transition-transform duration-300 group-hover:scale-105"
@@ -41,23 +39,20 @@ export const ProjectCard = ({
         </div>
       ) : (
         <div className="absolute inset-0 bg-gradient-to-br from-gray-800 to-gray-900">
-          <div className="absolute inset-0 bg-gradient-to-br from-tiktokPink/10 to-tiktokAqua/10" />
+          <div className="absolute inset-0 bg-gradient-to-br from-accent-primary/10 to-accent-secondary/10" />
         </div>
       )}
 
-      {/* Content Overlay */}
       <div className="relative h-full flex flex-col justify-between p-6">
-        {/* Header */}
         <div className="flex items-start justify-between">
           <div className="space-y-1">
-            <h3 className="text-xl sm:text-2xl font-light text-white group-hover:text-tiktokAqua transition-colors">
+            <h3 className="text-xl sm:text-2xl font-light text-white group-hover:text-accent-secondary transition-colors">
               {title}
             </h3>
           </div>
-          <ExternalLink className="w-5 h-5 text-gray-400 group-hover:text-tiktokPink transition-colors opacity-0 group-hover:opacity-100" />
+          <ExternalLink className="w-5 h-5 text-gray-400 group-hover:text-accent-primary transition-colors opacity-0 group-hover:opacity-100" />
         </div>
 
-        {/* Footer */}
         <div className="space-y-3">
           <p className="body-small text-gray-300 line-clamp-3">
             {description}
@@ -81,8 +76,7 @@ export const ProjectCard = ({
         </div>
       </div>
 
-      {/* Hover overlay */}
-      <div className="absolute inset-0 bg-gradient-to-t from-tiktokPink/20 to-tiktokAqua/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+      <div className="absolute inset-0 bg-gradient-to-t from-accent-primary/20 to-accent-secondary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
     </div>
   </Link>
 );

@@ -11,7 +11,7 @@ export default function NotFound() {
       )}
     >
       <div className="text-center">
-        <h1 className="text-6xl font-bold text-tiktokPink mb-4">404</h1>
+        <h1 className="text-6xl font-bold text-accent-primary mb-4">404</h1>
         <h2 className="text-2xl mb-4">Page Not Found</h2>
         <p className="mb-8">
           {`The page you're looking for doesn't exist or has been moved.`}
@@ -19,8 +19,8 @@ export default function NotFound() {
         <Link
           href="/"
           className={twMerge(
-            'px-6 py-3 bg-tiktokPink text-white rounded-lg',
-            'hover:bg-tiktokAqua transition-colors duration-200'
+            'px-6 py-3 bg-accent-primary text-white rounded-lg',
+            'hover:bg-accent-secondary transition-colors duration-200'
           )}
         >
           Go Home

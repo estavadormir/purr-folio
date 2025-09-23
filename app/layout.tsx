@@ -1,4 +1,5 @@
 import { Inter, Space_Mono, JetBrains_Mono } from 'next/font/google';
+import type { Metadata } from 'next';
 import './globals.css';
 
 const inter = Inter({
@@ -18,7 +19,7 @@ const jetbrainsMono = JetBrains_Mono({
   variable: '--font-code',
   weight: ['300', '400', '500'],
 });
-export const metadata = {
+export const metadata: Metadata = {
   title: 'André - frontend developer',
   description:
     'Frontend developer with 7 years of experience based in Luxembourg',
@@ -67,11 +68,11 @@ export const metadata = {
   },
 };
 
-export default function RootLayout({
-  children,
-}: {
+interface RootLayoutProps {
   children: React.ReactNode;
-}) {
+}
+
+export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html className="scroll-smooth" lang="en">
       <head>
@@ -81,7 +82,9 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <script defer data-domain="andrelikescomputers.dev" src="https://coffee.hairybulbs.com/js/script.js"></script>
       </head>
-      <body className={`${inter.variable} ${spaceMono.variable} ${jetbrainsMono.variable} font-sans`}>{children}</body>
+      <body className={`${inter.variable} ${spaceMono.variable} ${jetbrainsMono.variable} font-sans`}>
+        {children}
+      </body>
     </html>
   );
 }

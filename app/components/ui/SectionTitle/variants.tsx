@@ -12,11 +12,11 @@ export const InitialTitle = ({ title, subtitle, className }: TitleProps) => (
     <h2 className="title-main ml-5 mt-5 flex justify-center pl-2 lg:mb-2 lg:justify-start">
       {title}
       {subtitle && (
-        <span className="text-tiktokAqua ml-4 lg:ml-6">{subtitle}</span>
+        <span className="text-accent-secondary ml-4 lg:ml-6">{subtitle}</span>
       )}
     </h2>
-    <div className="w-48 h-0.5 bg-gradient-to-r from-tiktokPink to-tiktokAqua ml-7 mt-2" />
-    <div className="w-32 h-0.5 bg-gradient-to-r from-tiktokAqua to-tiktokPink ml-7 mt-1" />
+    <div className="w-48 h-0.5 bg-gradient-to-r from-accent-primary to-accent-secondary ml-7 mt-2" />
+    <div className="w-32 h-0.5 bg-gradient-to-r from-accent-secondary to-accent-primary ml-7 mt-1" />
   </div>
 );
 
@@ -25,10 +25,10 @@ export const StandardTitle = ({ title, subtitle, className }: TitleProps) => (
   <div className={twMerge('flex flex-col', className)}>
     <h2 className="ml-5 mt-5 flex justify-center pl-2 text-4xl text-gray-100 lg:mb-2 lg:justify-start lg:text-6xl">
       {title}
-      {subtitle && <span className="text-tiktokPink ">{subtitle}</span>}
+      {subtitle && <span className="text-accent-primary ">{subtitle}</span>}
     </h2>
-    <div className="w-48 h-1 bg-tiktokPink ml-7 mt-2" />
-    <div className="w-32 h-1 bg-tiktokPink ml-7 mt-1" />
+    <div className="w-48 h-1 bg-accent-primary ml-7 mt-2" />
+    <div className="w-32 h-1 bg-accent-primary ml-7 mt-1" />
   </div>
 );
 
@@ -37,17 +37,17 @@ export const TechStackTitle = ({ title, subtitle, className }: TitleProps) => (
   <div className={twMerge('flex flex-col', className)}>
     <h2 className="ml-5 mt-5 flex justify-center pl-2 text-4xl text-slate-900 lg:mb-2 lg:justify-start lg:text-6xl">
       {title}
-      {subtitle && <span className="text-tiktokPink">{subtitle}</span>}
+      {subtitle && <span className="text-accent-primary">{subtitle}</span>}
     </h2>
-    <div className="w-48 h-1 bg-tiktokPink ml-7 mt-2" />
-    <div className="w-32 h-1 bg-tiktokPink ml-7 mt-1" />
+    <div className="w-48 h-1 bg-accent-primary ml-7 mt-2" />
+    <div className="w-32 h-1 bg-accent-primary ml-7 mt-1" />
   </div>
 );
 
 // For Contact section (pink border bottom style)
 export const ContactTitle = ({ title, subtitle, className }: TitleProps) => (
   <div className={twMerge('flex flex-col', className)}>
-    <h2 className="flex-start font-display text-brand text-tiktokPink border-tiktokPink mb-4 flex border-b-2 font-bold uppercase lg:text-xl">
+    <h2 className="flex-start font-display text-brand text-accent-primary border-accent-primary mb-4 flex border-b-2 font-bold uppercase lg:text-xl">
       {title}
     </h2>
     {subtitle && (

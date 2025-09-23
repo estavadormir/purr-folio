@@ -12,13 +12,12 @@ export const AboutSection = () => {
     >
       <div className="w-full px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto py-8 sm:py-12">
         <div className="grid lg:grid-cols-5 gap-8 lg:gap-12 items-center">
-          {/* Text Content */}
           <div className="lg:col-span-3 space-y-6">
             <div className="space-y-2">
               <h2 className="title-section">
                 About me
               </h2>
-              <div className="w-16 h-0.5 bg-gradient-to-r from-tiktokPink to-tiktokAqua"></div>
+              <div className="w-16 h-0.5 bg-gradient-to-r from-accent-primary to-accent-secondary"></div>
             </div>
 
             <div className="space-y-4 subtitle">
@@ -26,7 +25,7 @@ export const AboutSection = () => {
                 Hello! I'm André, a frontend developer with{' '}
                 <span className="accent-text">7 years of experience</span>{' '}
                 building digital experiences. I've had the privilege of working across diverse sectors—from{' '}
-                <span className="text-tiktokPink font-medium">startups to the space industry</span>{' '}
+                <span className="text-accent-primary font-medium">startups to the space industry</span>{' '}
                 and financial sector—each teaching me something valuable about creating solutions that matter.
               </p>
 
@@ -35,20 +34,19 @@ export const AboutSection = () => {
                 <span className="accent-text">Luxembourg</span>, I specialize in crafting{' '}
                 <span className="text-white font-medium">accessible, performant web applications</span>{' '}
                 that solve real problems. I have a{' '}
-                <span className="text-tiktokPink font-medium">Bachelor's in Computer Science</span>{' '}
+                <span className="text-accent-primary font-medium">Bachelor's in Computer Science</span>{' '}
                 and speak English, French, and Portuguese.
               </p>
 
               <p>
                 When I'm not coding, you'll find me{' '}
                 <span className="accent-text">running marathons</span>,{' '}
-                <span className="text-tiktokPink font-medium">cruising on my longboard</span>,{' '}
+                <span className="text-accent-primary font-medium">cruising on my longboard</span>,{' '}
                 or exploring virtual worlds in World of Warcraft. I'm also a devoted cat lover—they make the best debugging partners!
               </p>
             </div>
           </div>
 
-          {/* Skills/Technologies - Side panel */}
           <div className="lg:col-span-2 space-y-6">
             <div className="space-y-4">
               <h3 className="text-xl font-medium text-white font-sans">
@@ -57,14 +55,14 @@ export const AboutSection = () => {
 
               <div className="space-y-3">
                 <div className="space-y-2">
-                  <h4 className="body-small text-tiktokAqua uppercase tracking-wider font-medium">
+                  <h4 className="body-small text-accent-secondary uppercase tracking-wider font-medium">
                     Frontend
                   </h4>
                   <div className="flex flex-wrap gap-2">
                     {['TypeScript', 'SolidJS', 'React', 'Next.js', 'Vue.js', 'Astro', 'Angular', 'TailwindCSS'].map((tech) => (
                       <span
                         key={tech}
-                        className="tech-tag px-3 py-1 bg-gray-800 text-gray-300 rounded-md border border-gray-700 hover:border-tiktokPink transition-colors"
+                        className="tech-tag px-3 py-1 bg-gray-800 text-gray-300 rounded-md border border-gray-700 hover:border-accent-primary transition-colors"
                       >
                         {tech}
                       </span>
@@ -73,14 +71,14 @@ export const AboutSection = () => {
                 </div>
 
                 <div className="space-y-2">
-                  <h4 className="body-small text-tiktokPink uppercase tracking-wider font-medium">
+                  <h4 className="body-small text-accent-primary uppercase tracking-wider font-medium">
                     Backend & Cloud
                   </h4>
                   <div className="flex flex-wrap gap-2">
                     {['Go', 'Python', 'Laravel', 'NestJS', 'FastAPI', 'PostgreSQL', 'MongoDB', 'AWS', 'Docker'].map((tech) => (
                       <span
                         key={tech}
-                        className="tech-tag px-3 py-1 bg-gray-800 text-gray-300 rounded-md border border-gray-700 hover:border-tiktokAqua transition-colors"
+                        className="tech-tag px-3 py-1 bg-gray-800 text-gray-300 rounded-md border border-gray-700 hover:border-accent-secondary transition-colors"
                       >
                         {tech}
                       </span>

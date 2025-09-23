@@ -1,29 +1,26 @@
+import { twMerge } from 'tailwind-merge';
 import {
   AboutSection,
   ContactSection,
   InitialSection,
   ProjectsSection,
 } from '@/components';
-import type { NextPage } from 'next';
-import { twMerge } from 'tailwind-merge';
 
-const App: NextPage = () => {
+const sections = [
+  { Component: InitialSection, zIndex: 'z-10' },
+  { Component: AboutSection, zIndex: 'z-20' },
+  { Component: ProjectsSection, zIndex: 'z-30' },
+  { Component: ContactSection, zIndex: 'z-40' },
+];
+
+export default function HomePage() {
   return (
     <main className={twMerge('relative bg-gradient-to-br from-slate-900 via-slate-800 to-gray-900')}>
-      <div className="h-screen sticky top-0 z-10">
-        <InitialSection />
-      </div>
-      <div className="h-screen sticky top-0 z-20">
-        <AboutSection />
-      </div>
-      <div className="h-screen sticky top-0 z-30">
-        <ProjectsSection />
-      </div>
-      <div className="h-screen sticky top-0 z-40">
-        <ContactSection />
-      </div>
+      {sections.map(({ Component, zIndex }, index) => (
+        <div key={index} className={`h-screen sticky top-0 ${zIndex}`}>
+          <Component />
+        </div>
+      ))}
     </main>
   );
-};
-
-export default App;
+}

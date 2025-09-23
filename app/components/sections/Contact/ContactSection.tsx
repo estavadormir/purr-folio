@@ -1,4 +1,3 @@
-import { twMerge } from 'tailwind-merge';
 import { Mail, Github } from 'lucide-react';
 
 export const ContactSection = () => (
@@ -9,13 +8,12 @@ export const ContactSection = () => (
   >
     <div className="w-full px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto py-8 sm:py-12">
       <div className="space-y-8 sm:space-y-12">
-        {/* Header */}
         <div className="space-y-4">
           <div className="space-y-2">
             <h2 className="title-section">
               Let's work together
             </h2>
-            <div className="w-16 h-0.5 bg-gradient-to-r from-tiktokPink to-tiktokAqua"></div>
+            <div className="w-16 h-0.5 bg-gradient-to-r from-accent-primary to-accent-secondary"></div>
           </div>
           <div className="max-w-2xl">
             <p className="subtitle">
@@ -25,11 +23,10 @@ export const ContactSection = () => (
           </div>
         </div>
 
-        {/* Contact Options */}
         <div className="flex items-center justify-center gap-8">
           <a
             href="mailto:andrelikescomputers@gmail.com"
-            className="group flex items-center justify-center w-16 h-16 text-gray-400 hover:text-tiktokAqua transition-all duration-300 hover:scale-110"
+            className="group flex items-center justify-center w-16 h-16 text-gray-400 hover:text-accent-secondary transition-all duration-300 hover:scale-110"
           >
             <Mail className="w-8 h-8" />
           </a>
@@ -38,13 +35,12 @@ export const ContactSection = () => (
             href="https://github.com/estavadormir/"
             target="_blank"
             rel="noopener noreferrer"
-            className="group flex items-center justify-center w-16 h-16 text-gray-400 hover:text-tiktokPink transition-all duration-300 hover:scale-110"
+            className="group flex items-center justify-center w-16 h-16 text-gray-400 hover:text-accent-primary transition-all duration-300 hover:scale-110"
           >
             <Github className="w-8 h-8" />
           </a>
         </div>
 
-        {/* Footer */}
         <div className="pt-6 mt-6 border-t border-gray-800">
           <div className="text-center space-y-2">
             <p className="body-small text-gray-500">
@@ -53,14 +49,14 @@ export const ContactSection = () => (
             <div className="flex items-center justify-center gap-4 body-small">
               <a
                 href="/privacy"
-                className="text-gray-600 hover:text-tiktokAqua transition-colors"
+                className="text-gray-600 hover:text-accent-secondary transition-colors"
               >
                 Privacy Policy
               </a>
               <span className="text-gray-700">•</span>
               <a
                 href="/terms"
-                className="text-gray-600 hover:text-tiktokPink transition-colors"
+                className="text-gray-600 hover:text-accent-primary transition-colors"
               >
                 Terms of Use
               </a>

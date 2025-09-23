@@ -17,7 +17,7 @@ export const SocialLink = ({
 }: SocialLinkProps) => (
   <Link
     className={twMerge(
-      'hover:text-tiktokPink mr-2 mt-2 flex cursor-pointer',
+      'hover:text-accent-primary mr-2 mt-2 flex cursor-pointer',
       'justify-start rounded-lg px-2 text-center sm:text-xl',
       className
     )}
