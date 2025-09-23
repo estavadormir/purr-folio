@@ -2,6 +2,8 @@
 
 A modern Next.js portfolio template built with TypeScript, TailwindCSS, and purr-ui components. This template provides a clean, professional foundation for creating personal portfolio websites.
 
+**Live Demo:** [andrelikescomputers.dev](https://andrelikescomputers.dev)
+
 ## Features
 
 - **Modern Tech Stack**: Built with Next.js 15, React 19, and TypeScript
@@ -90,18 +92,23 @@ Update the portfolio content by modifying the components in the `app` directory.
 
 ### Vercel (Recommended)
 
+This template includes Vercel configuration for seamless deployment:
+
 1. Push your code to GitHub
 2. Connect your repository to Vercel
-3. Deploy automatically on every push
+3. Vercel will automatically detect the Next.js framework
+4. Deploy automatically on every push
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/estavadormir/purr-folio)
 
 ### Other Platforms
 
 The built application can be deployed to any platform that supports Node.js applications:
 
-- Netlify
-- Railway
-- DigitalOcean App Platform
-- AWS Amplify
+- **Netlify**: Supports Next.js with automatic builds
+- **Railway**: One-click deployment with GitHub integration
+- **DigitalOcean App Platform**: Managed deployment with scaling
+- **AWS Amplify**: Full-stack deployment with CI/CD
 
 ## Contributing
 

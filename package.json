@@ -6,6 +6,14 @@
   "keywords": ["nextjs", "portfolio", "template", "tailwindcss", "typescript", "purr-ui"],
   "author": "Andre <andrelikescomputers@gmail.com>",
   "license": "MIT",
+  "homepage": "https://andrelikescomputers.dev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/estavadormir/purr-folio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/estavadormir/purr-folio/issues"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",

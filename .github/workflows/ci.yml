@@ -1,8 +1,9 @@
-name: CI
+name: CI/CD
 
 on:
   push:
     branches: [main]
+    tags: ['v*']
   pull_request:
     branches: [main]
 
@@ -25,16 +26,65 @@ jobs:
           version: latest
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: pnpm install
 
       - name: Lint code
         run: pnpm lint
 
-      - name: Type check
+      - name: Type check and build
         run: pnpm build
 
       - name: Run tests
         run: pnpm test || echo "No tests configured yet"
 
+  release:
+    if: startsWith(github.ref, 'refs/tags/v')
+    needs: lint-and-test
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 'lts/*'
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: latest
+
+      - name: Install dependencies
+        run: pnpm install
+
       - name: Build for production
         run: pnpm build
+
+      - name: Create GitHub Release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.ref_name }}
+          release_name: Release ${{ github.ref_name }}
+          body: |
+            ## What's Changed
+
+            Automated release for ${{ github.ref_name }}
+
+            **Live Demo:** [andrelikescomputers.dev](https://andrelikescomputers.dev)
+
+            ## How to Use This Template
+
+            1. Click "Use this template" button
+            2. Clone your new repository
+            3. Run `pnpm install`
+            4. Start customizing with `pnpm dev`
+
+            See the [README](https://github.com/estavadormir/purr-folio#readme) for detailed instructions.
+          draft: false
+          prerelease: false
