@@ -1,5 +1,6 @@
 'use client';
-import { CategorySection, SectionTitle } from '@/components/ui';
+import { SectionTitle } from '@hairy-studios/purr-ui';
+import { CategorySection } from '@/components/ui';
 import { TECH_STACK } from '@/constants';
 import { twMerge } from 'tailwind-merge';
 import { useRef, useState, useEffect } from 'react';

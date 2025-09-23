@@ -1,4 +1,5 @@
-import { ProjectCard, SectionContainer, SectionHeader } from '@/components/ui';
+import { ProjectCard } from '@hairy-studios/purr-ui';
+import { SectionContainer, SectionHeader } from '@/components/ui';
 import { PROJECTS } from '@/constants';
 
 interface ProjectsSectionProps {
@@ -32,7 +33,7 @@ export const ProjectsSection = ({
       <SectionHeader title="Things I've built" subtitle={subtitle} />
 
       <div className="relative">
-        <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="hidden xl:grid xl:grid-cols-3 gap-6">
           {PROJECTS.map((project) => (
             <ProjectCard
               key={project.title}
@@ -45,10 +46,10 @@ export const ProjectsSection = ({
           ))}
         </div>
 
-        <div className="md:hidden">
+        <div className="xl:hidden">
           <div className="flex gap-4 overflow-x-auto pb-4 px-4 -mx-4 custom-scrollbar-horizontal">
             {PROJECTS.map((project) => (
-              <div key={project.title} className="flex-shrink-0 w-72">
+              <div key={project.title} className="flex-shrink-0 w-72 sm:w-80">
                 <ProjectCard
                   title={project.title}
                   description={project.description}

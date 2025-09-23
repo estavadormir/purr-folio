@@ -1,6 +1,7 @@
 import { Inter, Space_Mono, JetBrains_Mono } from 'next/font/google';
 import type { Metadata } from 'next';
 import './globals.css';
+import '@hairy-studios/purr-ui/styles';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -76,13 +77,25 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html className="scroll-smooth" lang="en">
       <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, viewport-fit=cover"
+        />
         <meta name="theme-color" content="#1e293b" />
         <meta name="mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-        <script defer data-domain="andrelikescomputers.dev" src="https://coffee.hairybulbs.com/js/script.js"></script>
+        <meta
+          name="apple-mobile-web-app-status-bar-style"
+          content="black-translucent"
+        />
+        <script
+          defer
+          data-domain="andrelikescomputers.dev"
+          src="https://coffee.hairybulbs.com/js/script.js"
+        ></script>
       </head>
-      <body className={`${inter.variable} ${spaceMono.variable} ${jetbrainsMono.variable} font-sans`}>
+      <body
+        className={`${inter.variable} ${spaceMono.variable} ${jetbrainsMono.variable} font-sans`}
+      >
         {children}
       </body>
     </html>

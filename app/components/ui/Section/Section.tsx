@@ -1,5 +1,5 @@
 import { twMerge } from 'tailwind-merge';
-import { SectionTitle } from '../SectionTitle';
+import { SectionTitle } from '@estavadormir/purr-ui';
 
 interface SectionProps {
   id: string;

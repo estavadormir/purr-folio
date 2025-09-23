@@ -7,15 +7,15 @@ export const ContactSection = () => (
     className="relative flex h-screen w-full flex-col justify-center bg-gradient-to-br from-slate-900 via-gray-900 to-slate-800"
   >
     <div className="w-full px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto py-8 sm:py-12">
-      <div className="space-y-8 sm:space-y-12">
+      <div className="space-y-8 sm:space-y-12 text-center">
         <div className="space-y-4">
-          <div className="space-y-2">
+          <div className="space-y-2 flex flex-col items-center">
             <h2 className="title-section">
               Let's work together
             </h2>
             <div className="w-16 h-0.5 bg-gradient-to-r from-accent-primary to-accent-secondary"></div>
           </div>
-          <div className="max-w-2xl">
+          <div className="max-w-2xl mx-auto">
             <p className="subtitle">
               I'm always interested in hearing about new opportunities, especially ambitious or large scale projects.
               But even if you just want to say hi, I'll do my best to get back to you!

@@ -11,16 +11,16 @@ export const AboutSection = () => {
       )}
     >
       <div className="w-full px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto py-8 sm:py-12">
-        <div className="grid lg:grid-cols-5 gap-8 lg:gap-12 items-center">
+        <div className="grid lg:grid-cols-5 gap-8 lg:gap-12 items-start">
           <div className="lg:col-span-3 space-y-6">
-            <div className="space-y-2">
+            <div className="space-y-2 text-center lg:text-left flex flex-col items-center lg:items-start">
               <h2 className="title-section">
                 About me
               </h2>
               <div className="w-16 h-0.5 bg-gradient-to-r from-accent-primary to-accent-secondary"></div>
             </div>
 
-            <div className="space-y-4 subtitle">
+            <div className="space-y-4 subtitle text-center lg:text-left">
               <p>
                 Hello! I'm André, a frontend developer with{' '}
                 <span className="accent-text">7 years of experience</span>{' '}
@@ -47,22 +47,25 @@ export const AboutSection = () => {
             </div>
           </div>
 
-          <div className="lg:col-span-2 space-y-6">
-            <div className="space-y-4">
-              <h3 className="text-xl font-medium text-white font-sans">
-                Some of the tech I work with
-              </h3>
+          <div className="lg:col-span-2 mt-8 lg:mt-0">
+            <div className="space-y-6">
+              <div className="space-y-2 text-center lg:text-left flex flex-col items-center lg:items-start">
+                <h3 className="text-xl sm:text-2xl font-medium text-white font-sans">
+                  Some of the tech I work with
+                </h3>
+                <div className="w-12 h-0.5 bg-gradient-to-r from-accent-primary to-accent-secondary lg:hidden"></div>
+              </div>
 
-              <div className="space-y-3">
+              <div className="space-y-4 text-center lg:text-left">
                 <div className="space-y-2">
-                  <h4 className="body-small text-accent-secondary uppercase tracking-wider font-medium">
+                  <h4 className="text-sm text-accent-secondary uppercase tracking-wider font-medium">
                     Frontend
                   </h4>
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-1.5 justify-center lg:justify-start">
                     {['TypeScript', 'SolidJS', 'React', 'Next.js', 'Vue.js', 'Astro', 'Angular', 'TailwindCSS'].map((tech) => (
                       <span
                         key={tech}
-                        className="tech-tag px-3 py-1 bg-gray-800 text-gray-300 rounded-md border border-gray-700 hover:border-accent-primary transition-colors"
+                        className="tech-tag px-2 py-1 bg-gray-800/80 text-gray-300 rounded border border-gray-700 hover:border-accent-primary hover:bg-gray-700/80 transition-all duration-200 text-xs"
                       >
                         {tech}
                       </span>
@@ -71,14 +74,14 @@ export const AboutSection = () => {
                 </div>
 
                 <div className="space-y-2">
-                  <h4 className="body-small text-accent-primary uppercase tracking-wider font-medium">
+                  <h4 className="text-sm text-accent-primary uppercase tracking-wider font-medium">
                     Backend & Cloud
                   </h4>
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-1.5 justify-center lg:justify-start">
                     {['Go', 'Python', 'Laravel', 'NestJS', 'FastAPI', 'PostgreSQL', 'MongoDB', 'AWS', 'Docker'].map((tech) => (
                       <span
                         key={tech}
-                        className="tech-tag px-3 py-1 bg-gray-800 text-gray-300 rounded-md border border-gray-700 hover:border-accent-secondary transition-colors"
+                        className="tech-tag px-2 py-1 bg-gray-800/80 text-gray-300 rounded border border-gray-700 hover:border-accent-secondary hover:bg-gray-700/80 transition-all duration-200 text-xs"
                       >
                         {tech}
                       </span>
@@ -87,14 +90,14 @@ export const AboutSection = () => {
                 </div>
 
                 <div className="space-y-2">
-                  <h4 className="body-small text-white uppercase tracking-wider font-medium">
+                  <h4 className="text-sm text-white uppercase tracking-wider font-medium">
                     Testing & DevOps
                   </h4>
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-1.5 justify-center lg:justify-start">
                     {['Vitest', 'Jest', 'Cypress', 'GitHub Actions', 'Grafana', 'Prometheus', 'Cloudflare'].map((tech) => (
                       <span
                         key={tech}
-                        className="tech-tag px-3 py-1 bg-gray-800 text-gray-300 rounded-md border border-gray-700 hover:border-white transition-colors"
+                        className="tech-tag px-2 py-1 bg-gray-800/80 text-gray-300 rounded border border-gray-700 hover:border-white hover:bg-gray-700/80 transition-all duration-200 text-xs"
                       >
                         {tech}
                       </span>
