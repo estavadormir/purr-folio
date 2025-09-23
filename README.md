@@ -6,15 +6,15 @@ A modern, performant, and SEO-optimized personal portfolio website built with Ne
 
 ## Features
 
-- 📱 Responsive design that works across all devices
-- 🎨 Clean and modern UI with smooth animations
-- 🚀 Optimized performance with 100/100 Lighthouse scores
-- 🔍 SEO optimized
-- ♿ Accessible (WCAG compliant)
-- 🌗 Consistent styling with TailwindCSS
-- 📦 Type-safe with TypeScript
-- 🧪 Comprehensive test coverage
-- 🔄 CI/CD with GitHub Actions
+- Responsive design that works across all devices
+- Clean and modern UI with smooth animations
+- Optimized performance with 100/100 Lighthouse scores
+- SEO optimized
+- Accessible (WCAG compliant)
+- Consistent styling with TailwindCSS
+- Type-safe with TypeScript
+- Comprehensive test coverage
+- CI/CD with GitHub Actions
 
 ## Tech Stack
 
