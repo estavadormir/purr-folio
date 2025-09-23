@@ -11,6 +11,7 @@
     "typescript",
     "purr-ui"
   ],
+  "packageManager": "pnpm@9.4.0",
   "author": "Andre <andrelikescomputers@gmail.com>",
   "license": "MIT",
   "homepage": "https://andrelikescomputers.dev",
