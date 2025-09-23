@@ -1,7 +1,7 @@
 import { Inter, Space_Mono, JetBrains_Mono } from 'next/font/google';
 import type { Metadata } from 'next';
 import './globals.css';
-import '@hairy-estavadormir/purr-ui/styles';
+import '@estavadormir/purr-ui/styles';
 
 const inter = Inter({
   subsets: ['latin'],
