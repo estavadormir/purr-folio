@@ -1,10 +1,22 @@
-import { Space_Mono } from 'next/font/google';
+import { Inter, Space_Mono, JetBrains_Mono } from 'next/font/google';
 import './globals.css';
+
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-sans',
+  weight: ['300', '400', '500', '600'],
+});
 
 const spaceMono = Space_Mono({
   subsets: ['latin'],
   variable: '--font-mono',
   weight: '400',
+});
+
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ['latin'],
+  variable: '--font-code',
+  weight: ['300', '400', '500'],
 });
 export const metadata = {
   title: 'André - frontend developer',
@@ -63,9 +75,13 @@ export default function RootLayout({
   return (
     <html className="scroll-smooth" lang="en">
       <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+        <meta name="theme-color" content="#1e293b" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <script defer data-domain="andrelikescomputers.dev" src="https://coffee.hairybulbs.com/js/script.js"></script>
       </head>
-      <body className={spaceMono.className}>{children}</body>
+      <body className={`${inter.variable} ${spaceMono.variable} ${jetbrainsMono.variable} font-sans`}>{children}</body>
     </html>
   );
 }

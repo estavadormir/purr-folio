@@ -9,14 +9,14 @@ interface TitleProps {
 // For Initial section (white text with aqua subtitle)
 export const InitialTitle = ({ title, subtitle, className }: TitleProps) => (
   <div className={twMerge('flex flex-col', className)}>
-    <h2 className="ml-5 mt-5 flex justify-center pl-2 text-4xl text-gray-100 lg:mb-2 lg:justify-start lg:text-6xl">
+    <h2 className="title-main ml-5 mt-5 flex justify-center pl-2 lg:mb-2 lg:justify-start">
       {title}
       {subtitle && (
         <span className="text-tiktokAqua ml-4 lg:ml-6">{subtitle}</span>
       )}
     </h2>
-    <div className="w-48 h-1 bg-tiktokPink ml-7 mt-2" />
-    <div className="w-32 h-1 bg-tiktokPink ml-7 mt-1" />
+    <div className="w-48 h-0.5 bg-gradient-to-r from-tiktokPink to-tiktokAqua ml-7 mt-2" />
+    <div className="w-32 h-0.5 bg-gradient-to-r from-tiktokAqua to-tiktokPink ml-7 mt-1" />
   </div>
 );
 

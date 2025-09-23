@@ -3,14 +3,13 @@ import {
   ContactSection,
   InitialSection,
   ProjectsSection,
-  TechstackSection,
 } from '@/components';
 import type { NextPage } from 'next';
 import { twMerge } from 'tailwind-merge';
 
 const App: NextPage = () => {
   return (
-    <main className={twMerge('relative bg-tiktokPink')}>
+    <main className={twMerge('relative bg-gradient-to-br from-slate-900 via-slate-800 to-gray-900')}>
       <div className="h-screen sticky top-0 z-10">
         <InitialSection />
       </div>
@@ -18,15 +17,11 @@ const App: NextPage = () => {
         <AboutSection />
       </div>
       <div className="h-screen sticky top-0 z-30">
-        <TechstackSection bgColor="bg-gradient-to-br from-white via-slate-50 to-slate-100" />
-      </div>
-      <div className="h-screen sticky top-0 z-40">
         <ProjectsSection />
       </div>
-      <div className="h-screen sticky top-0 z-50">
+      <div className="h-screen sticky top-0 z-40">
         <ContactSection />
       </div>
-      <div className="h-screen"></div>
     </main>
   );
 };

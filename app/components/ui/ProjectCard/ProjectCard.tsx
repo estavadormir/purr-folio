@@ -1,11 +1,14 @@
 import Link from 'next/link';
 import { twMerge } from 'tailwind-merge';
+import { ExternalLink } from 'lucide-react';
 
 interface ProjectCardProps {
   title: string;
   description: string;
   url: string;
-  astroFeatured?: boolean;
+  featured?: boolean;
+  technologies: string[];
+  image?: string;
   className?: string;
 }
 
@@ -13,7 +16,9 @@ export const ProjectCard = ({
   title,
   description,
   url,
-  astroFeatured = false,
+  featured = false,
+  technologies,
+  image,
   className
 }: ProjectCardProps) => (
   <Link
@@ -25,39 +30,59 @@ export const ProjectCard = ({
       className
     )}
   >
-    <div className="h-full bg-white/80 backdrop-blur-sm border border-gray-200/60 rounded-2xl p-6 shadow-sm hover:shadow-lg hover:bg-white/90 transition-all duration-300 flex flex-col">
-      <div className="flex items-start justify-between mb-4">
-        <h3 className="font-bold text-xl text-gray-900 group-hover:text-tiktokPink transition-colors leading-tight">
-          {title}
-        </h3>
-        <div className="flex flex-col gap-2 flex-shrink-0 ml-4">
-          {astroFeatured && (
-            <div className="flex items-center gap-1 px-2 py-1 bg-gradient-to-r from-tiktokPink to-tiktokAqua rounded-full">
-              <div className="w-1.5 h-1.5 bg-white rounded-full" />
-              <span className="text-xs text-white font-medium">Astro Featured</span>
-            </div>
-          )}
-          <div className="w-3 h-3 bg-tiktokAqua rounded-full opacity-0 group-hover:opacity-100 transition-opacity" />
+    <div className="relative h-64 sm:h-80 overflow-hidden rounded-lg border border-gray-700 bg-gray-800">
+      {/* Background Image with Overlay */}
+      {image ? (
+        <div
+          className="absolute inset-0 bg-cover bg-center transition-transform duration-300 group-hover:scale-105"
+          style={{ backgroundImage: `url(${image})` }}
+        >
+          <div className="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-gray-900/50 to-gray-900/30" />
+        </div>
+      ) : (
+        <div className="absolute inset-0 bg-gradient-to-br from-gray-800 to-gray-900">
+          <div className="absolute inset-0 bg-gradient-to-br from-tiktokPink/10 to-tiktokAqua/10" />
+        </div>
+      )}
+
+      {/* Content Overlay */}
+      <div className="relative h-full flex flex-col justify-between p-6">
+        {/* Header */}
+        <div className="flex items-start justify-between">
+          <div className="space-y-1">
+            <h3 className="text-xl sm:text-2xl font-light text-white group-hover:text-tiktokAqua transition-colors">
+              {title}
+            </h3>
+          </div>
+          <ExternalLink className="w-5 h-5 text-gray-400 group-hover:text-tiktokPink transition-colors opacity-0 group-hover:opacity-100" />
+        </div>
+
+        {/* Footer */}
+        <div className="space-y-3">
+          <p className="body-small text-gray-300 line-clamp-3">
+            {description}
+          </p>
+
+          <div className="flex flex-wrap gap-1">
+            {technologies.slice(0, 3).map((tech) => (
+              <span
+                key={tech}
+                className="tech-tag px-2 py-1 bg-gray-800/80 text-gray-400 rounded border border-gray-700"
+              >
+                {tech}
+              </span>
+            ))}
+            {technologies.length > 3 && (
+              <span className="tech-tag px-2 py-1 text-gray-500">
+                +{technologies.length - 3}
+              </span>
+            )}
+          </div>
         </div>
       </div>
 
-      <p className="text-gray-600 leading-relaxed flex-1 mb-4">
-        {description}
-      </p>
-
-      <div className="flex items-center justify-between">
-        <div className="flex items-center gap-2">
-          <div className="w-2 h-2 bg-tiktokPink rounded-full"></div>
-          <span className="text-sm text-gray-500 group-hover:text-tiktokPink transition-colors">
-            Visit Project
-          </span>
-        </div>
-        <div className="flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
-          <div className="w-1 h-1 bg-tiktokAqua rounded-full"></div>
-          <div className="w-1 h-1 bg-tiktokPink rounded-full"></div>
-          <div className="w-1 h-1 bg-tiktokAqua rounded-full"></div>
-        </div>
-      </div>
+      {/* Hover overlay */}
+      <div className="absolute inset-0 bg-gradient-to-t from-tiktokPink/20 to-tiktokAqua/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
     </div>
   </Link>
 );

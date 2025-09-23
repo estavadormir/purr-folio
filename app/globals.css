@@ -5,6 +5,48 @@
   --color-secondary: #da2001;
   --color-tiktokPink: #ff0050;
   --color-tiktokAqua: #00f2ea;
+
+  /* Typography System */
+  --font-family-sans: var(--font-sans);
+  --font-family-mono: var(--font-mono);
+  --font-family-code: var(--font-code);
+}
+
+/* Typography Classes - Mobile Optimized */
+.title-main {
+  @apply text-3xl sm:text-4xl lg:text-6xl font-light text-white font-mono;
+}
+
+.title-section {
+  @apply text-2xl sm:text-3xl lg:text-4xl font-light text-white font-sans;
+}
+
+.subtitle {
+  @apply text-base sm:text-lg text-gray-400 font-sans font-normal leading-relaxed;
+}
+
+.body-text {
+  @apply text-sm sm:text-base text-gray-200 leading-relaxed font-sans;
+}
+
+.body-small {
+  @apply text-xs sm:text-sm text-gray-400 font-sans;
+}
+
+.accent-text {
+  @apply font-medium text-tiktokAqua font-sans;
+}
+
+.tech-tag {
+  @apply text-xs text-gray-400 font-mono;
+}
+
+/* Text utilities */
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .custom-scrollbar-horizontal {

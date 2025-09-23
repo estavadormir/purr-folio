@@ -3,7 +3,6 @@ import { Section } from '@/components/ui';
 import { twMerge } from 'tailwind-merge';
 import dynamic from 'next/dynamic';
 import { MoreInfo } from './MoreInfo';
-import { ScrollIndicator } from './ScrollIndicator';
 
 const Typewriter = dynamic(() => import('typewriter-effect'), {
   ssr: false,
@@ -18,10 +17,10 @@ export const InitialSection = () => {
         title="Hi, I'm"
         subtitle="André"
         variant="initial"
-        className="top-0 flex h-screen w-full flex-col items-center justify-center"
+        className="top-0 flex h-screen w-full flex-col items-center justify-center bg-gradient-to-br from-slate-900 via-slate-800 to-gray-900"
       >
         <div className={twMerge('text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto')}>
-          <div className={twMerge('text-xl sm:text-2xl lg:text-4xl xl:text-5xl font-light mt-6 sm:mt-8 min-h-[3rem] sm:min-h-[4rem] lg:min-h-[5rem]')}>
+          <div className={twMerge('subtitle text-xl sm:text-2xl lg:text-4xl xl:text-5xl mt-6 sm:mt-8 min-h-[3rem] sm:min-h-[4rem] lg:min-h-[5rem]')}>
             <Typewriter
               options={{
                 strings: [
@@ -52,7 +51,7 @@ export const InitialSection = () => {
               <MoreInfo
                 items={[
                   { href: '#about', text: 'Who?' },
-                  { href: '#techstack', text: 'Tech Stack' },
+                  { href: '#projects', text: 'Projects' },
                   { href: '#contacts', text: 'Contact' },
                 ]}
               />
@@ -60,7 +59,6 @@ export const InitialSection = () => {
           </nav>
         </div>
       </Section>
-      <ScrollIndicator />
     </>
   );
 };
