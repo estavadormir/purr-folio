@@ -3,10 +3,10 @@ import { describe, it, expect, vi } from 'vitest';
 import TermsPage from '../../terms/page';
 
 vi.mock('@/components/ui', () => ({
-  LegalPageLayout: ({ title, sections }: any) => (
+  LegalPageLayout: ({ title, sections }: { title: string; sections: Array<{ title: string; content: string }> }) => (
     <div data-testid="legal-page-layout">
       <h1>{title}</h1>
-      {sections.map((section: any, index: number) => (
+      {sections.map((section: { title: string; content: string }, index: number) => (
         <div key={index} data-testid={`section-${index}`}>
           <h2>{section.title}</h2>
           <div>{section.content}</div>
