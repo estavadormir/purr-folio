@@ -81,8 +81,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
           name="viewport"
           content="width=device-width, initial-scale=1, viewport-fit=cover"
         />
-        <meta name="theme-color" content="#1e293b" />
-        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="theme-color" content="#0f172a" />
+        <meta name="msapplication-navbutton-color" content="#0f172a" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta
           name="apple-mobile-web-app-status-bar-style"
           content="black-translucent"
@@ -94,7 +95,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         ></script>
       </head>
       <body
-        className={`${inter.variable} ${spaceMono.variable} ${jetbrainsMono.variable} font-sans`}
+        className={`${inter.variable} ${spaceMono.variable} ${jetbrainsMono.variable} font-sans bg-slate-900`}
       >
         {children}
       </body>
