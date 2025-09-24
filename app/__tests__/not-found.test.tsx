@@ -1,9 +1,17 @@
 import { render, screen } from '@testing-library/react';
 import { describe, it, expect, vi } from 'vitest';
 import NotFound from '../not-found';
+import type { AnchorHTMLAttributes, ReactNode } from 'react';
 
 vi.mock('next/link', () => ({
-  default: ({ children, href, ...props }: any) => (
+  default: ({
+    children,
+    href,
+    ...props
+  }: {
+    children: ReactNode;
+    href: string;
+  } & AnchorHTMLAttributes<HTMLAnchorElement>) => (
     <a href={href} {...props}>
       {children}
     </a>
@@ -16,7 +24,11 @@ describe('NotFound', () => {
 
     expect(screen.getByText('404')).toBeInTheDocument();
     expect(screen.getByText('Page Not Found')).toBeInTheDocument();
-    expect(screen.getByText("The page you're looking for doesn't exist or has been moved.")).toBeInTheDocument();
+    expect(
+      screen.getByText(
+        "The page you're looking for doesn't exist or has been moved."
+      )
+    ).toBeInTheDocument();
   });
 
   it('renders home link with correct attributes', () => {
@@ -33,6 +45,12 @@ describe('NotFound', () => {
     expect(mainDiv).toHaveClass('min-h-screen', 'bg-slate-900', 'text-white');
 
     const homeLink = screen.getByRole('link', { name: /go home/i });
-    expect(homeLink).toHaveClass('px-6', 'py-3', 'bg-accent-primary', 'text-white', 'rounded-lg');
+    expect(homeLink).toHaveClass(
+      'px-6',
+      'py-3',
+      'bg-accent-primary',
+      'text-white',
+      'rounded-lg'
+    );
   });
 });

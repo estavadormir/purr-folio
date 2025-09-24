@@ -1,6 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import { describe, it, expect, vi } from 'vitest';
 import { ProjectsSection } from './ProjectsSection';
+import type { AnchorHTMLAttributes, ReactNode } from 'react';
 
 vi.mock('@/constants', () => ({
   PROJECTS: [
@@ -22,7 +23,14 @@ vi.mock('@/constants', () => ({
 }));
 
 vi.mock('next/link', () => ({
-  default: ({ children, href, ...props }: any) => (
+  default: ({
+    children,
+    href,
+    ...props
+  }: {
+    children: ReactNode;
+    href: string;
+  } & AnchorHTMLAttributes<HTMLAnchorElement>) => (
     <a href={href} {...props}>
       {children}
     </a>

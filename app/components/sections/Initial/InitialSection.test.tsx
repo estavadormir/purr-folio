@@ -1,15 +1,23 @@
 import { render, screen } from '@testing-library/react';
 import { describe, it, expect, vi } from 'vitest';
 import { InitialSection } from './InitialSection';
+import type { ReactNode } from 'react';
 
 vi.mock('typewriter-effect', () => ({
-  default: ({ options }: any) => <div data-testid="typewriter">{options.strings.join(', ')}</div>,
+  default: ({ options }: { options: { strings: string[] } }) => (
+    <div data-testid="typewriter">{options.strings.join(', ')}</div>
+  ),
 }));
 
+interface MoreInfoItem {
+  href: string;
+  text: string;
+}
+
 vi.mock('./MoreInfo', () => ({
-  MoreInfo: ({ items }: any) => (
+  MoreInfo: ({ items }: { items: MoreInfoItem[] }) => (
     <div data-testid="more-info">
-      {items.map((item: any, index: number) => (
+      {items.map((item, index) => (
         <a key={index} href={item.href} aria-label={item.text}>
           {item.text}
         </a>
@@ -19,7 +27,19 @@ vi.mock('./MoreInfo', () => ({
 }));
 
 vi.mock('@/components/ui', () => ({
-  Section: ({ id, title, subtitle, children, className }: any) => (
+  Section: ({
+    id,
+    title,
+    subtitle,
+    children,
+    className,
+  }: {
+    id: string;
+    title: string;
+    subtitle?: string;
+    children: ReactNode;
+    className?: string;
+  }) => (
     <section id={id} aria-label={id} className={className}>
       <div>
         <h2>{title}</h2>
@@ -40,7 +60,9 @@ describe('InitialSection', () => {
     render(<InitialSection />);
     const typewriter = screen.getByTestId('typewriter');
     expect(typewriter).toBeInTheDocument();
-    expect(typewriter).toHaveTextContent('a developer, a good developer, an ok developer, a cool developer, a kewl developer, a passionate coder, a problem solver, :)');
+    expect(typewriter).toHaveTextContent(
+      'a developer, a good developer, an ok developer, a cool developer, a kewl developer, a passionate coder, a problem solver, :)'
+    );
   });
 
   it('renders navigation links', () => {
@@ -60,6 +82,11 @@ describe('InitialSection', () => {
   it('applies correct background classes', () => {
     const { container } = render(<InitialSection />);
     const section = container.querySelector('section');
-    expect(section).toHaveClass('bg-gradient-to-br', 'from-slate-900', 'via-slate-800', 'to-gray-900');
+    expect(section).toHaveClass(
+      'bg-gradient-to-br',
+      'from-slate-900',
+      'via-slate-800',
+      'to-gray-900'
+    );
   });
 });
