@@ -1,5 +1,5 @@
 'use client';
-import { SectionTitle } from '@hairy-estavadormir/purr-ui';
+import { SectionTitle } from '@estavadormir/purr-ui';
 import { CategorySection } from '@/components/ui';
 import { TECH_STACK } from '@/constants';
 import { twMerge } from 'tailwind-merge';
