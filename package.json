@@ -33,7 +33,7 @@
     "test:coverage": "vitest --coverage"
   },
   "dependencies": {
-    "@estavadormir/purr-ui": "^0.2.5",
+    "@estavadormir/purr-ui": "^0.2.6",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "dayjs": "^1.11.18",
