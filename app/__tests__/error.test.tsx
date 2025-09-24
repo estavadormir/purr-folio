@@ -23,7 +23,7 @@ describe('Error', () => {
     render(<Error error={mockError} reset={mockReset} />);
 
     expect(screen.getByText('500')).toBeInTheDocument();
-    expect(screen.getByText('Something went wrong!')).toBeInTheDocument();
+    expect(screen.getByText('Oops! Something broke')).toBeInTheDocument();
     expect(screen.getByText('Test error message')).toBeInTheDocument();
     expect(screen.getByText('Try again')).toBeInTheDocument();
   });
@@ -49,9 +49,9 @@ describe('Error', () => {
     const { container } = render(<Error error={mockError} reset={mockReset} />);
 
     const mainDiv = container.firstChild;
-    expect(mainDiv).toHaveClass('min-h-screen', 'bg-slate-900', 'text-white');
+    expect(mainDiv).toHaveClass('min-h-screen', 'bg-gradient-to-br', 'from-slate-900', 'via-gray-900', 'to-slate-800', 'text-white', 'flex', 'items-center', 'justify-center', 'px-4');
 
     const button = screen.getByText('Try again');
-    expect(button).toHaveClass('px-6', 'py-3', 'bg-accent-primary', 'text-white', 'rounded-lg');
+    expect(button).toHaveClass('px-6', 'py-3', 'bg-gradient-to-r', 'from-accent-primary', 'to-accent-secondary', 'text-white', 'rounded-lg');
   });
 });
